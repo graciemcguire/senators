@@ -1,3 +1,3 @@
 class SenatorSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :name, :state, :party, :naacp_rating, :pp_rating, :envi_rating, :nra_rating, :trump_rating
 end
