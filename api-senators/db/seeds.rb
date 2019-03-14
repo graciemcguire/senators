@@ -55,7 +55,7 @@ senators = Senator.create(
      party: 'R',
      naacp_rating: '0',
      pp_rating: '0',
-     nvi_rating: '0',
+     envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
      user_rating: '0'
@@ -1009,6 +1009,6 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      user_rating: '0'
-    },
+    }
   ]
 )

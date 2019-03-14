@@ -3,4 +3,9 @@ class Api::V1::SenatorsController < ApplicationController
     @senators = Senator.all
     render json: @senators
   end
+
+  def show
+    @senator = Senator.find(params[:id])
+    render json: @senator
+  end
 end
