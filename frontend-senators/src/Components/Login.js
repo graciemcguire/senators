@@ -11,6 +11,30 @@ class Login extends Component {
     this.props.loginAndFetch(e)
   }
 
+  renderLoginForm = () => {
+    return (
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <input
+            type="text"
+            name="email"
+            placeholder="email"
+            value={this.props.email}
+        />
+        <form onSubmit={this.handleSubmit}>
+          <input
+            type="password"
+            name="password"
+            placeholder="password"
+            value={this.props.password}
+        />
+        <button type='submit'>Login</button>
+      </form>
+    </div>
+  )
+  }
+
+
   render(){
     return(
       <h1>does this work</h1>
