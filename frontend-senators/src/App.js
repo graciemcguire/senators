@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Route, Switch, withRouter } from 'react-router-dom'
-import Graph from './Containers/MainContainer/Graph.js'
 
 import { connect } from 'react-redux'
 import { setAndFetchUser } from './Redux/actions'
 
-import Nav from './Containers/Header/Nav'
-import Signup from './Containers/Header/Signup'
-import Login from './Containers/Header/Login'
-import Profile from './Containers/User/Profile'
-import Home from './Containers/MainContainer/Home'
+import Nav from './Components/Nav'
+import Signup from './Components/Signup'
+import Login from './Components/Login'
+import Profile from './Components/Profile'
+import Home from './Components/Home'
+import Graph from './Components/Graph'
 
 class App extends Component {
 
@@ -34,7 +34,6 @@ class App extends Component {
     console.log('in app', this.props);
     return (
       <div>
-        <Nav />
         <Switch>
           <Route path='/login' component={ Login }/>
           <Route path='/signup' component={ Signup }/>
