@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class SenatorThumbnail extends Component {
+class SenatorModule extends Component {
   render(){
     return (
       <div>
@@ -10,4 +10,4 @@ class SenatorThumbnail extends Component {
   }
 }
 
-export default SenatorThumbnail
+export default SenatorModule

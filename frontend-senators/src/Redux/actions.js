@@ -11,12 +11,28 @@ export const logoutUser = () => ({
 export const getCurrentUser = (user) => ({
   type: 'GET_CURRENT_USER',
   payload: { user }
- })
+})
 
 export const updateUserFromFetch = (user) => ({
   type: 'UPDATE_USER_FROM_FETCH',
   payload: { user }
 })
+
+export const loginFetch = (e) => {
+  return fetch("http://localhost:3001/api/v1/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: JSON.stringify({
+      user: {
+        email: e.target.email.value,
+        password: e.target.password.value
+      }
+    })
+  }).then(resp => resp.json())
+}
 
 export const loginAndFetch = (e) => {
   return (dispatch) => {
@@ -39,22 +55,6 @@ export const setAndFetchUser = (token) => {
   }
 }
 
-export const loginFetch = (e) => {
-  return fetch("http://localhost:3001/api/v1/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json"
-    },
-    body: JSON.stringify({
-      user: {
-        email: e.target.email.value,
-        password: e.target.password.value
-      }
-    })
-  }).then(resp => resp.json())
-}
-
 export const signUpFetch = (e) => {
   return fetch("http://localhost:3001/api/v1/users", {
       method: "POST",
@@ -72,12 +72,11 @@ export const signUpFetch = (e) => {
 }
 
 export const fetchingCurrentUser = (token) => {
-  return fetch('http://localhost:3001/api/v1/beef', {
+  return fetch('http://localhost:3001/api/v1/user', {
     headers: {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${token}`
     }
   })
   .then(resp => resp.json())
-  .then(console.log)
 }

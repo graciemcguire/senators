@@ -11,7 +11,7 @@ import Signup from './Components/Signup'
 import Login from './Components/Login'
 import Profile from './Components/Profile'
 import Home from './Components/Home'
-import Graph from './Components/Graph'
+import MainContainer from './Components/MainContainer'
 
 class App extends Component {
 

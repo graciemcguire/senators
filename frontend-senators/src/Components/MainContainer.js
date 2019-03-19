@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import SenatorThumbnail from './SenatorThumbnail'
+import SenatorModule from './SenatorModule'
 
 class Graph extends Component {
   render(){
-    console.log('graph', this.props);
+    console.log('main', this.props);
     return(
       <div>
-        <h1>hi i'm in the graph area</h1>
-        <SenatorThumbnail />
+        <h1>hi i'm in the main area</h1>
+        <SenatorModule />
       </div>
     )
   }
