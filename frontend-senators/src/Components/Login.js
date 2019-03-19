@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { loginAndFetch } from '../Redux/actions'
-import { Redirect } from 'react-router-dom'
+import { Redirect, withRouter, Link } from 'react-router-dom'
 
 
 class Login extends Component {
@@ -20,24 +20,25 @@ class Login extends Component {
             name="email"
             placeholder="email"
             value={this.props.email}
-        />
-        <form onSubmit={this.handleSubmit}>
+          />
           <input
             type="password"
             name="password"
             placeholder="password"
             value={this.props.password}
-        />
-        <button type='submit'>Login</button>
-      </form>
-    </div>
-  )
+          />
+          <button type='submit'>Login</button>
+        </form>
+      </div>
+    )
   }
-
 
   render(){
     return(
-      <h1>does this work</h1>
+      <div>
+        <h1>Login!</h1>
+        {localStorage.getItem('token') ? <Redirect to='/profile' /> : this.renderLoginForm() }
+      </div>
     )
   }
 }
