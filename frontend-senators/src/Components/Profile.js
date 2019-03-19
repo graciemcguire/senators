@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 class Profile extends Component {
 
   render() {
-    console.log('profile', this.state);
+    console.log('profile page:', this.state);
     return (
       <div>
         <h1>{this.props.user}</h1>
