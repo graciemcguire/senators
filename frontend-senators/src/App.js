@@ -31,7 +31,6 @@ class App extends Component {
   //
 
   render() {
-    console.log('in app', this.props);
     return (
       <div>
         <Switch>

@@ -34,10 +34,14 @@ export const loginFetch = (e) => {
   }).then(resp => resp.json())
 }
 
-export const loginAndFetch = (e) => {
+export const loginAndFetch = (e, history) => {
   return (dispatch) => {
     return loginFetch(e)
-    .then(json => dispatch(handleLogin(json.user)) && localStorage.setItem("token", json.jwt))
+    .then(json => {
+      history.push('/profile')
+      dispatch(handleLogin(json.user));
+      localStorage.setItem("token", json.jwt);
+    })
   }
 }
 

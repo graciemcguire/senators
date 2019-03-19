@@ -8,12 +8,13 @@ class Signup extends Component {
   submitHandler = (e) => {
     e.preventDefault()
     this.props.signUpAndFetch(e)
-    .then(<Redirect to='/profile' />)
+    // .then(<Redirect to='/profile' />)
   }
 
   render() {
     return (
     <div>
+    <h1>sign up!!</h1>
       <form onSubmit={ this.submitHandler }>
         <input
           type='text'

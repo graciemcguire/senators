@@ -8,7 +8,7 @@ class Login extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    this.props.loginAndFetch(e)
+    this.props.loginAndFetch(e, this.props.history)
   }
 
   renderLoginForm = () => {
@@ -51,8 +51,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    loginAndFetch: (e) => dispatch(loginAndFetch(e))
+    loginAndFetch: (e, history) => dispatch(loginAndFetch(e, history))
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login)
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Login))
