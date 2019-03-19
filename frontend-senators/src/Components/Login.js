@@ -14,18 +14,18 @@ class Login extends Component {
   renderLoginForm = () => {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={ this.handleSubmit }>
           <input
             type="text"
             name="email"
             placeholder="email"
-            value={this.props.email}
+            value={ this.props.email }
           />
           <input
             type="password"
             name="password"
             placeholder="password"
-            value={this.props.password}
+            value={ this.props.password }
           />
           <button type='submit'>Login</button>
         </form>
