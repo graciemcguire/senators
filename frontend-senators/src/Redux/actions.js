@@ -72,11 +72,12 @@ export const signUpFetch = (e) => {
 }
 
 export const fetchingCurrentUser = (token) => {
-  return fetch('http://localhost:3001/api/v1/user', {
+  return fetch('http://localhost:3001/api/v1/beef', {
     headers: {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${token}`
     }
   })
   .then(resp => resp.json())
+  .then(console.log)
 }

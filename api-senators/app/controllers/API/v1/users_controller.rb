@@ -26,7 +26,7 @@ class Api::V1::UsersController < ApplicationController
     @user = User.find(params[:id])
     @senator = Senator.find(params[:senator_id])
     @user.senators.delete(@senator)
-    render json: @user.plants
+    render json: @user.senators
   end
 
  private
