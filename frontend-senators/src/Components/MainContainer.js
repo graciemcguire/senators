@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import SenatorModule from './SenatorModule'
 
-class Graph extends Component {
+class MainContainer extends Component {
   render(){
     console.log('main', this.props);
     return(
@@ -24,4 +24,4 @@ const mapStateToProps = (state) => {
 //   action: () => dispatch(action())
 // }
 
-export default connect(mapStateToProps)(Graph)
+export default connect(mapStateToProps)(MainContainer)
