@@ -1,5 +1,5 @@
 const initialState = {
-  user: {},
+  auth: {},
   senatorObjs: [],
   selectedSenator: {},
   ratings: {}
@@ -8,21 +8,15 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch(action.type){
 
-    // case: 'HANDLE_LOGIN' : {
-    //   return {
-    //     ...state,
-    //     user: action.payload,
-    //     ratings: { action.payload.user.ratings
-    //   }
-    // }
-    // case: 'HANDLE_LOGOUT' : {
-    //   return {
-    //     ...state,
-    //     user: {},
-    //     ratings: {}
-    //   }
-    // }
-
+    case 'HANDLE_LOGIN': {
+      return { ...state, auth: action.payload }
+    }
+    case 'HANDLE_LOGOUT': {
+      return { ...state, auth: {} }
+    }
+    case 'GET_CURRENT_USER': {
+      return { ...state, auth: action.payload }
+    }
     default:
     return state
   }

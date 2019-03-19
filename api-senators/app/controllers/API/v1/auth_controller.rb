@@ -13,7 +13,7 @@ end
 
 private
 
-def user_login_params
-  params.require(:user).permit(:username, :password)
-end
+  def user_login_params
+    params.require(:user).permit(:username, :password)
+  end
 end

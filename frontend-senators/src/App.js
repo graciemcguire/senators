@@ -7,14 +7,31 @@ import Graph from './Containers/MainContainer/Graph.js'
 import { connect } from 'react-redux'
 import { setAndFetchUser } from './Redux/actions'
 
-import Nav from './components/Nav'
-import Signup from './components/Signup'
-import Login from './components/Login'
-import Profile from './components/Profile'
-import Home from './components/Home'
+import Nav from './Containers/Header/Nav'
+import Signup from './Containers/Header/Signup'
+import Login from './Containers/Header/Login'
+import Profile from './Containers/User/Profile'
+import Home from './Containers/MainContainer/Home'
 
 class App extends Component {
+
+  componentDidMount () {
+    const token = localStorage.getItem('token')
+
+    if (token) {
+      this.props.setAndFetchUser(token)
+    }
+  }
+
+  // componentDidMount () {
+  //   fetch('http://localhost:3001/ap1/v1/senators')
+  //   .then(r => r.json())
+  //   .then(console.log)
+  // }
+  //
+
   render() {
+    console.log('in app', this.props);
     return (
       <div>
         <Nav />
@@ -31,8 +48,7 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    // user: state.auth.user
-    ...state
+    user: state.auth.user
   }
 }
 

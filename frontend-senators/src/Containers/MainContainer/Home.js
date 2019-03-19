@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Graph from './Graph'
 
 class Home extends Component {
   render() {
@@ -12,3 +13,5 @@ class Home extends Component {
     );
   }
 }
+
+export default Home;
