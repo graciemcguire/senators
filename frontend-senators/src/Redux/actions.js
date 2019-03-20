@@ -45,10 +45,13 @@ export const loginAndFetch = (e, history) => {
   }
 }
 
-export const signUpAndFetch = (e) => {
+export const signUpAndFetch = (e, history) => {
   return (dispatch) => {
     return signUpFetch(e)
-    .then(json => dispatch(handleLogin(json.user)) && localStorage.setItem("token", json.jwt))
+    .then(json => {
+      history.push('/profile')
+      dispatch(handleLogin(json.user)); localStorage.setItem("token", json.jwt)
+    })
   }
 }
 

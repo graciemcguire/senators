@@ -23,13 +23,6 @@ class App extends Component {
     }
   }
 
-  // componentDidMount () {
-  //   fetch('http://localhost:3001/ap1/v1/senators')
-  //   .then(r => r.json())
-  //   .then(console.log)
-  // }
-  //
-
   render() {
     return (
       <div>

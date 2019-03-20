@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import SenatorModule from './SenatorModule'
+import Nav from './Nav'
 
 class MainContainer extends Component {
   render(){

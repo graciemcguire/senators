@@ -7,7 +7,7 @@ class Signup extends Component {
 
   submitHandler = (e) => {
     e.preventDefault()
-    this.props.signUpAndFetch(e)
+    this.props.signUpAndFetch(e, this.props.history)
     // .then(<Redirect to='/profile' />)
   }
 
@@ -46,7 +46,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    signUpAndFetch: (e) => dispatch(signUpAndFetch(e))
+    signUpAndFetch: (e, history) =>
+    dispatch(signUpAndFetch(e, history))
   }
 }
 
