@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { loginAndFetch } from '../Redux/actions'
+import { loginAndFetch } from '../Redux/userActions'
 import { Redirect, withRouter, Link } from 'react-router-dom'
 
 

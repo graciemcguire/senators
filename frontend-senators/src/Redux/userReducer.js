@@ -1,11 +1,10 @@
 const initialState = {
   auth: {},
-  senatorObjs: [],
-  selectedSenator: {},
-  ratings: {}
+  senators: [],
+  user_senators: []
 }
 
-const reducer = (state = initialState, action) => {
+const userReducer = (state = initialState, action) => {
   switch(action.type){
 
     case 'HANDLE_LOGIN': {
@@ -22,4 +21,4 @@ const reducer = (state = initialState, action) => {
   }
 }
 
-export default reducer;
+export default userReducer;

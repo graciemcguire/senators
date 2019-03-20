@@ -4,7 +4,7 @@ import './App.css';
 import { Route, Switch, withRouter } from 'react-router-dom'
 
 import { connect } from 'react-redux'
-import { setAndFetchUser } from './Redux/actions'
+import { setAndFetchUser } from './Redux/userActions'
 
 import Nav from './Components/Nav'
 import Signup from './Components/Signup'

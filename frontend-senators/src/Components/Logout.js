@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { logoutUser } from '../Redux/actions.js'
+import { logoutUser } from '../Redux/userActions.js'
 import { withRouter } from "react-router-dom"
 
 class Logout extends Component {

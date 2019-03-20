@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { signUpAndFetch } from '../Redux/actions'
+import { signUpAndFetch } from '../Redux/userActions'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 
@@ -8,7 +8,6 @@ class Signup extends Component {
   submitHandler = (e) => {
     e.preventDefault()
     this.props.signUpAndFetch(e, this.props.history)
-    // .then(<Redirect to='/profile' />)
   }
 
   render() {
