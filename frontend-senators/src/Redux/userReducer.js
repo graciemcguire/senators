@@ -16,6 +16,8 @@ const userReducer = (state = initialState, action) => {
     case 'GET_CURRENT_USER': {
       return { ...state, auth: action.payload }
     }
+    case 'SENATORS_ADDED_TO_STATE':
+      return { ...state, senators: action.payload }
     default:
     return state
   }

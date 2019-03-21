@@ -4,7 +4,7 @@ import './App.css';
 import { Route, Switch, withRouter } from 'react-router-dom'
 
 import { connect } from 'react-redux'
-import { setAndFetchUser } from './Redux/userActions'
+import { setAndFetchUser, fetchSenators } from './Redux/userActions'
 
 import Nav from './Components/Nav'
 import Signup from './Components/Signup'
@@ -12,7 +12,7 @@ import Login from './Components/Login'
 import Profile from './Components/Profile'
 import Home from './Components/Home'
 import MainContainer from './Components/MainContainer'
-import { fetchSenators } from './Redux/senatorActions'
+
 
 
 class App extends Component {
