@@ -6,6 +6,7 @@ export const fetchSenators = () => {
   };
 };
 
-export const stateSenators = senators => {
-  return { type: "SENATORS_ADDED_TO_STATE", payload: senators };
-};
+export const stateSenators = senators => ({
+  type: 'SENATORS_ADDED_TO_STATE',
+  payload: { senators }
+})

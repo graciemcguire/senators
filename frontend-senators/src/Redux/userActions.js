@@ -55,13 +55,6 @@ export const signUpAndFetch = (e, history) => {
   }
 }
 
-export const setAndFetchUser = (token) => {
-  return (dispatch) => {
-    return fetchingCurrentUser(token)
-    .then(json => dispatch(getCurrentUser(json.user)))
-  }
-}
-
 export const signUpFetch = (e) => {
   return fetch("http://localhost:3001/api/v1/users", {
       method: "POST",
@@ -76,6 +69,13 @@ export const signUpFetch = (e) => {
         }
       })
     }).then(resp => resp.json())
+}
+
+export const setAndFetchUser = (token) => {
+  return (dispatch) => {
+    return fetchingCurrentUser(token)
+    .then(json => dispatch(getCurrentUser(json.user)))
+  }
 }
 
 export const fetchingCurrentUser = (token) => {

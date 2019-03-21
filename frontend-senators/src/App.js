@@ -12,10 +12,13 @@ import Login from './Components/Login'
 import Profile from './Components/Profile'
 import Home from './Components/Home'
 import MainContainer from './Components/MainContainer'
+import { fetchSenators } from './Redux/senatorActions'
+
 
 class App extends Component {
 
   componentDidMount () {
+    console.log(this.props);
     const token = localStorage.getItem('token')
 
     if (token) {
