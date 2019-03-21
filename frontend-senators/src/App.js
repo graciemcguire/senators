@@ -13,8 +13,6 @@ import Profile from './Components/Profile'
 import Home from './Components/Home'
 import MainContainer from './Components/MainContainer'
 
-
-
 class App extends Component {
 
   componentDidMount () {
@@ -24,8 +22,6 @@ class App extends Component {
     if (token) {
       this.props.setAndFetchUser(token)
       this.props.fetchSenators(token)
-    } else {
-      alert('log in b')
     }
   }
 
@@ -36,6 +32,7 @@ class App extends Component {
           <Route path='/login' component={ Login }/>
           <Route path='/signup' component={ Signup }/>
           <Route path='/profile' component={ Profile }/>
+          <Route path='/main' component={ MainContainer }/>
           <Route path='/' component={ Home }/>
         </Switch>
       </div>

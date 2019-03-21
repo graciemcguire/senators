@@ -74,12 +74,12 @@ export const signUpFetch = (e) => {
 export const setAndFetchUser = (token) => {
   return (dispatch) => {
     return fetchingCurrentUser(token)
-    .then(json => dispatch(getCurrentUser(json.user)))
+    .then(json => dispatch(getCurrentUser(json[0])))
   }
 }
 
 export const fetchingCurrentUser = (token) => {
-  return fetch('http://localhost:3001/api/v1/user', {
+  return fetch('http://localhost:3001/api/v1/users', {
     headers: {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${token}`
@@ -88,10 +88,9 @@ export const fetchingCurrentUser = (token) => {
   .then(resp => resp.json())
 }
 
-
 export const fetchSenators = (token) => {
   return dispatch => {
-    fetch("http://localhost:3001/api/v1/senators", {
+    fetch('http://localhost:3001/api/v1/senators', {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${token}`

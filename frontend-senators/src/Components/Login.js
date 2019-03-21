@@ -9,6 +9,7 @@ class Login extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     this.props.loginAndFetch(e, this.props.history)
+    this.props.history.push('/main')
   }
 
   renderLoginForm = () => {
@@ -37,7 +38,7 @@ class Login extends Component {
     return(
       <div>
         <h1>Login!</h1>
-        { localStorage.getItem('token') ? <Redirect to='/' /> : this.renderLoginForm() }
+        { localStorage.getItem('token') ? <Redirect to='/main' /> : this.renderLoginForm() }
       </div>
     )
   }
