@@ -23,6 +23,7 @@ class App extends Component {
 
     if (token) {
       this.props.setAndFetchUser(token)
+      this.props.fetchSenators()
     }
   }
 
