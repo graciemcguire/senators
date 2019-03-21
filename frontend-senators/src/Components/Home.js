@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import MainContainer from './MainContainer'
 import Login from './Login'
+import { connect } from 'react-redux'
+
 
 class Home extends Component {
   render() {
@@ -16,4 +18,11 @@ class Home extends Component {
   }
 }
 
-export default Home;
+const mapStateToProps = (state) => {
+  return {
+    user: state.auth.user,
+    senators: state.senators
+  }
+}
+
+export default connect(mapStateToProps, null)(Home)

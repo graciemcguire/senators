@@ -89,9 +89,14 @@ export const fetchingCurrentUser = (token) => {
 }
 
 
-export const fetchSenators = () => {
+export const fetchSenators = (token) => {
   return dispatch => {
-    fetch("http://localhost:3001/api/v1/senators")
+    fetch("http://localhost:3001/api/v1/senators", {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`
+      }
+    })
       .then(r => r.json())
       .then(senators => dispatch(stateSenators(senators)));
   };

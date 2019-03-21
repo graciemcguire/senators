@@ -23,7 +23,9 @@ class App extends Component {
 
     if (token) {
       this.props.setAndFetchUser(token)
-      this.props.fetchSenators()
+      this.props.fetchSenators(token)
+    } else {
+      alert('log in b')
     }
   }
 
@@ -49,7 +51,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    setAndFetchUser: (token) => dispatch(setAndFetchUser(token))
+    setAndFetchUser: (token) => dispatch(setAndFetchUser(token)),
+    fetchSenators: (token) =>
+    dispatch(fetchSenators(token))
   }
 }
 

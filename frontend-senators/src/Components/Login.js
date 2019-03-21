@@ -37,7 +37,7 @@ class Login extends Component {
     return(
       <div>
         <h1>Login!</h1>
-        { localStorage.getItem('token') ? <Redirect to='/profile' /> : this.renderLoginForm() }
+        { localStorage.getItem('token') ? <Redirect to='/' /> : this.renderLoginForm() }
       </div>
     )
   }
