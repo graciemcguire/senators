@@ -12,6 +12,7 @@ import Login from './Components/Login'
 import Profile from './Components/Profile'
 import Home from './Components/Home'
 import MainContainer from './Components/MainContainer'
+import SenatorContainer from './Components/SenatorContainer'
 
 class App extends Component {
 
@@ -32,6 +33,7 @@ class App extends Component {
           <Route path='/login' component={ Login }/>
           <Route path='/signup' component={ Signup }/>
           <Route path='/profile' component={ Profile }/>
+          <Route path='/senators' component={ SenatorContainer }/>
           <Route path='/main' component={ MainContainer }/>
           <Route path='/' component={ Home }/>
         </Switch>

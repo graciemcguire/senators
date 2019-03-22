@@ -22,7 +22,7 @@ class Profile extends Component {
   }
 
   mapSenators = () => {
-    this.props.user.senators.map(senator => {
+    return this.props.user.senators.map(senator => {
       return <SenatorModule key={ senator.id } senator={ senator }/>
     })
   }
@@ -30,11 +30,11 @@ class Profile extends Component {
   render() {
     console.log('profile page:', this.props);
     return (
-      <div>
+      <div >
         { this.checkName() }
-        <Link to='/main' >Go rate some senators?</Link>
-        <Logout />
-        <p> put senators here </p>
+        <Link to='/main' className='button'>Go rate some senators?</Link>
+        <Logout className='button'/>
+        <h1> your rated senators </h1>
         { this.props.user ? this.mapSenators() : null }
       </div>
     )

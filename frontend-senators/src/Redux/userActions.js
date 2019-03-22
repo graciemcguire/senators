@@ -74,12 +74,12 @@ export const signUpFetch = (e) => {
 export const setAndFetchUser = (token) => {
   return (dispatch) => {
     return fetchingCurrentUser(token)
-    .then(json => dispatch(getCurrentUser(json[0])))
+    .then(json => dispatch(getCurrentUser(json)))
   }
 }
 
 export const fetchingCurrentUser = (token) => {
-  return fetch('http://localhost:3001/api/v1/users', {
+  return fetch('http://localhost:3001/api/v1/current_user', {
     headers: {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${token}`

@@ -11,6 +11,10 @@ def create
   end
 end
 
+def show
+  render json: current_user
+end
+
 private
 
   def user_login_params

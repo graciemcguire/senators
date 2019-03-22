@@ -39,14 +39,14 @@ body {
 
 .button:hover {
   color: white;
-  background-color: #282c34;
+  /* background-color: #282c34; */
   background-color: white;
   color: #282c34;
   border: none;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 22px;
 }
 
 .button {
@@ -57,9 +57,14 @@ body {
   text-align: center;
   text-decoration: none;
   /* display: inline-block; */
-  font-size: 12px;
+  font-size: 22px;
 }
 .main-buttons {
   justify-content: center;
   /* margin: 50px; */
+}
+
+.logo-main {
+  justify-content: center;
+  width: 800px;
 }
