@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -34,4 +35,31 @@
 
 body {
   background-image: './senator_app_bg.svg';
+}
+
+.button:hover {
+  color: white;
+  background-color: #282c34;
+  background-color: white;
+  color: #282c34;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.button {
+  color: white;
+  background-color: #282c34;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 12px;
+}
+.main-buttons {
+  justify-content: center;
+  /* margin: 50px; */
 }
