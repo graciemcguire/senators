@@ -60,3 +60,10 @@
 .logo-small {
   width: 600px;
 }
+
+.senator-grid {
+  background-color: #00293C;
+  color: #F1F3CE;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20% ;
+}

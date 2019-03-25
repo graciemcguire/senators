@@ -8,7 +8,7 @@ class SenatorModule extends Component {
     const renderUserSenators = () => {
       if (this.props.senator){
         return(
-          <div>
+          <div className= 'senator-card'>
             <h2>{ senator.name }</h2>
             <h3>{ senator.party }</h3>
             <h3>{ senator.state }</h3>

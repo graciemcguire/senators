@@ -4,11 +4,11 @@ import SenatorModule from './SenatorModule'
 
 const SenatorContainer = props => {
   return(
-    <div>
-      <h1>working?</h1>
-      {props.senator ? props.senators.map(senator => (
+    <div className= 'senator-grid'>
+      <h1>All senators</h1>
+      { props.senators.senators ? props.senators.senators.map(senator => (
         <SenatorModule key={ senator.id } senator={ senator }/>
-      )) : 'loading' }
+      )) : console.log(props.senators.senators) }
     </div>
   )
 }
