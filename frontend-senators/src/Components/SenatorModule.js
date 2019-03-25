@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default const SenatorModule = ({ closeModal, title, message }) => {
+const SenatorModule = ({ closeModal, title, message }) => {
   return (
     <div className="modal-content">
       <div className="modal-header">
@@ -20,3 +20,4 @@ export default const SenatorModule = ({ closeModal, title, message }) => {
     </div>
   )
 }
+export default SenatorModule;

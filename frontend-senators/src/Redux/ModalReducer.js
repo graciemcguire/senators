@@ -1,19 +1,17 @@
-import ActionTypes from './ModuleActionTypes';
+import ActionTypes from './ModalActionTypes';
 
 const initialState = {
-  modalType: null,
   modalProps: {}
 }
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case ModuleActionTypes.SHOW_MODAL:
+    case ModalActionTypes.SHOW_MODAL:
       return {
-        modalProps: action.modalProps,
-        modalType: action.modalType,
+        modalProps: action.modalProps
         type: action.type
       }
-    case ModuleActionTypes.HIDE_MODAL:
+    case ModalActionTypes.HIDE_MODAL:
       return initialState
     default:
       return state

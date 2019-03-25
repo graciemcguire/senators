@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import ReactModal from 'react-modal';
 
 const mapStateToProps = state => ({
-  ...state.modal
+  return { ...state.modal }
 })
 
 class ModalContainer extends React.Component {

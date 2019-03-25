@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { showModal, hideModal } from '../Redux/ModuleActions'
+import { showModal, hideModal } from '../Redux/ModalActions'
+import Modal from 'react-modal';
+import SenatorModule from './SenatorModule'
+import Popup from "reactjs-popup";
 
 class SenatorThumbnail extends Component {
 
@@ -10,15 +13,18 @@ class SenatorThumbnail extends Component {
      title: 'Senator Modal',
      closeModal: this.closeModal
     })
+    return <SenatorModule  />
   }
+
+
 
   render(){
     const renderPartyColor = () => {
-      if (this.props.senator.party === 'D'){
-        return 'senator-card-dem'
+      if (this.props.senator.party === 'R'){
+        return 'senator-card-gop'
       }
       else {
-        return 'senator-card-gop'
+        return 'senator-card-dem'
       }
     }
 
@@ -26,7 +32,7 @@ class SenatorThumbnail extends Component {
       if (this.props.senator){
         return(
           <div className={ renderPartyColor() }
-          onClick={ this.openModal }>
+          onClick>
             <h2>{ senator.name }</h2>
             <h3>{ senator.party } - { senator.state }</h3>
           </div>
@@ -37,18 +43,9 @@ class SenatorThumbnail extends Component {
     }
     const { senator } = this.props
     return (
-      <div>
-        { renderUserSenators() }
-      </div>
+      <Popup trigger={ renderUserSenators() } />
     )
   }
 }
 
-const mapDispatchToProps = dispatch => ({
-  hideModal: () => dispatch(hideModal()),
-  showModal: (modalProps, modalType) => {
-    dispatch(showModal({ modalProps, modalType }))
-  }
-})
-
-export default connect(null, mapDispatchToProps)(SenatorThumbnail);
+export default (SenatorThumbnail);

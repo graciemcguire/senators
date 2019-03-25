@@ -1,8 +1,8 @@
 import keyMirror from 'keymirror';
 
-const ModuleActionTypes = keyMirror({
+const ModalActionTypes = keyMirror({
   HIDE_MODAL: null,
   SHOW_MODAL: null,
 });
 
-export default ModuleActionTypes;
+export default ModalActionTypes;
