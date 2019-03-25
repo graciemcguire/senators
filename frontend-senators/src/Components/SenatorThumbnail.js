@@ -9,7 +9,7 @@ class SenatorThumbnail extends Component {
      open: true,
      title: 'Senator Modal',
      closeModal: this.closeModal
-   }, 'alert')
+    })
   }
 
   render(){
@@ -26,7 +26,7 @@ class SenatorThumbnail extends Component {
       if (this.props.senator){
         return(
           <div className={ renderPartyColor() }
-          onClick={ this.openModal }>
+          onClick={ () => console.log('click', senator) }>
             <h2>{ senator.name }</h2>
             <h3>{ senator.party } - { senator.state }</h3>
           </div>
@@ -45,10 +45,10 @@ class SenatorThumbnail extends Component {
 }
 
 const mapDispatchToProps = dispatch => ({
- hideModal: () => dispatch(hideModal()),
- showModal: (modalProps, modalType) => {
-  dispatch(showModal({ modalProps, modalType }))
- }
+  hideModal: () => dispatch(hideModal()),
+  showModal: (modalProps, modalType) => {
+    dispatch(showModal({ modalProps, modalType }))
+  }
 })
 
-export default connect(mapDispatchToProps)(SenatorThumbnail);
+export default connect(null, mapDispatchToProps)(SenatorThumbnail);

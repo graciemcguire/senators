@@ -5,10 +5,6 @@ import Nav from './Nav'
 
 class MainContainer extends Component {
 
-  mapSenators = () => {
-
-  }
-
 
   render(){
     console.log('main', this.props);

@@ -1,13 +1,13 @@
 import React from 'react'
 
-const SenatorModule = ({ closeModal, title, message }) => {
+export default const SenatorModule = ({ closeModal, title, message }) => {
   return (
     <div className="modal-content">
       <div className="modal-header">
         <h5
           className="modal-title"
         >{title}</h5>
-        <button type="button" className="close" aria-label="Close" onClick={closeModal}>
+        <button type="button" className="close" onClick={ closeModal }>
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -20,5 +20,3 @@ const SenatorModule = ({ closeModal, title, message }) => {
     </div>
   )
 }
-
-export default SenatorModule
