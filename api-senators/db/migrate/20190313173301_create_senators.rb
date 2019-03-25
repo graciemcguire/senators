@@ -12,6 +12,7 @@ class CreateSenators < ActiveRecord::Migration[5.2]
       t.boolean "user_woke"
       t.boolean "user_joke"
       t.string "contact"
+      t.string "image"
       t.timestamps
     end
   end

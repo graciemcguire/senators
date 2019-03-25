@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2019_03_13_173301) do
     t.boolean "user_woke"
     t.boolean "user_joke"
     t.string "contact"
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
