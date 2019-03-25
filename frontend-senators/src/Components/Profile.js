@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import Logout from './Logout'
 import { Link } from 'react-router-dom'
-import SenatorModule from './SenatorModule'
+import SenatorThumbnail from './SenatorThumbnail'
 import { setAndFetchUser } from '../Redux/userActions'
 
 class Profile extends Component {
@@ -23,7 +23,7 @@ class Profile extends Component {
 
   mapSenators = () => {
     return this.props.user.senators.map(senator => {
-      return <SenatorModule key={ senator.id } senator={ senator }/>
+      return <SenatorThumbnail key={ senator.id } senator={ senator }/>
     })
   }
 

@@ -67,3 +67,31 @@
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20% ;
 }
+
+.senator-card-gop {
+  justify-content: center;
+  border: solid;
+  margin: 20px 20px 20px;
+  text-align: center;
+}
+
+.senator-card-dem {
+  justify-content: center;
+  border: solid;
+  margin: 20px 20px 20px;
+  text-align: center;
+}
+
+.senator-card-gop:hover {
+  background-color: #F62A00;
+}
+
+.senator-card-dem:hover {
+  background-color: #1E656D;
+}
+
+/* colors = 
+navy - #00293C
+blue - #1E656D
+ivory - #F1F3CE
+red - #F62A00 */

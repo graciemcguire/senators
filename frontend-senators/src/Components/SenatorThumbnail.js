@@ -1,24 +1,30 @@
 import React, { Component } from 'react';
 
-class SenatorModule extends Component {
+class SenatorThumbnail extends Component {
 
 
   render(){
+    const renderPartyColor = () => {
+      if (this.props.senator.party === 'D'){
+        return 'senator-card-dem'
+      }
+      else {
+        return 'senator-card-gop'
+      }
+    }
 
     const renderUserSenators = () => {
       if (this.props.senator){
         return(
-          <div className= 'senator-card'>
+          <div className={ renderPartyColor() }>
             <h2>{ senator.name }</h2>
-            <h3>{ senator.party }</h3>
-            <h3>{ senator.state }</h3>
+            <h3>{ senator.party } - { senator.state }</h3>
           </div>
         )
       } else {
         return null
       }
     }
-    console.log('sen module', this.props);
     const { senator } = this.props
     return (
       <div>
@@ -28,4 +34,4 @@ class SenatorModule extends Component {
   }
 }
 
-export default SenatorModule
+export default SenatorThumbnail

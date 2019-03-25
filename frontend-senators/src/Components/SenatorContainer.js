@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import SenatorModule from './SenatorModule'
+import SenatorThumbnail from './SenatorThumbnail'
 
 const SenatorContainer = props => {
   return(
-    <div className= 'senator-grid'>
+    <div>
       <h1>All senators</h1>
+    <div className= 'senator-grid'>
+
       { props.senators.senators ? props.senators.senators.map(senator => (
-        <SenatorModule key={ senator.id } senator={ senator }/>
+        <SenatorThumbnail key={ senator.id } senator={ senator }/>
       )) : console.log(props.senators.senators) }
+      </div>
     </div>
   )
 }

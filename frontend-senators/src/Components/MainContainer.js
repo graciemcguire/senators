@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import SenatorModule from './SenatorModule'
+import SenatorThumbnail from './SenatorThumbnail'
 import Nav from './Nav'
 
 class MainContainer extends Component {
@@ -9,13 +9,13 @@ class MainContainer extends Component {
 
   }
 
-  
+
   render(){
     console.log('main', this.props);
     return(
       <div>
         <h1>hi i'm in the main area</h1>
-        <SenatorModule />
+        <SenatorThumbnail />
       </div>
     )
   }
