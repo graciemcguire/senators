@@ -17,7 +17,6 @@ import SenatorContainer from './Components/SenatorContainer'
 class App extends Component {
 
   componentDidMount () {
-    console.log('app', this.props.fetchSenators);
     const token = localStorage.getItem('token')
 
     if (token) {
@@ -27,6 +26,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.props);
     return (
       <div>
         <Switch>
@@ -44,7 +44,8 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    user: state.auth.user
+    user: state.auth.user,
+    senators: state.senators
   }
 }
 
