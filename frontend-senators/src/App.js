@@ -17,7 +17,7 @@ import SenatorContainer from './Components/SenatorContainer'
 class App extends Component {
 
   componentDidMount () {
-    console.log(this.props);
+    console.log('app', this.props.fetchSenators);
     const token = localStorage.getItem('token')
 
     if (token) {

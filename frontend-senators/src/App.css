@@ -1,16 +1,10 @@
 .App {
   text-align: center;
-  background-color: #282c34;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+  background-color: #00293C;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #00293C;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,15 +27,9 @@
   }
 }
 
-body {
-  background-image: './senator_app_bg.svg';
-}
-
 .button:hover {
-  color: white;
-  /* background-color: #282c34; */
-  background-color: white;
-  color: #282c34;
+  background-color: #F1F3CE;
+  color: #00293C;
   border: none;
   padding: 10px 20px;
   text-align: center;
@@ -50,8 +38,8 @@ body {
 }
 
 .button {
-  color: white;
-  background-color: #282c34;
+  color: #F1F3CE;
+  background-color: #00293C;
   border: none;
   padding: 10px 20px;
   text-align: center;
@@ -67,4 +55,8 @@ body {
 .logo-main {
   justify-content: center;
   width: 800px;
+}
+
+.logo-small {
+  width: 600px;
 }

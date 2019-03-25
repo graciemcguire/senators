@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { loginAndFetch } from '../Redux/userActions'
 import { Redirect, withRouter, Link } from 'react-router-dom'
-
+import wokeorjoke_v1 from '../wokeorjoke_v1.svg'
 
 class Login extends Component {
 
@@ -36,8 +36,9 @@ class Login extends Component {
 
   render(){
     return(
-      <div>
-        <h1>Login!</h1>
+      <div className='App-header'>
+        <img className='logo-small' src= { wokeorjoke_v1 } alt='logo'/>
+        <h3>Login!</h3>
         { localStorage.getItem('token') ? <Redirect to='/main' /> : this.renderLoginForm() }
       </div>
     )

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { signUpAndFetch } from '../Redux/userActions'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
+import wokeorjoke_v1 from '../wokeorjoke_v1.svg'
 
 class Signup extends Component {
 
@@ -12,8 +13,9 @@ class Signup extends Component {
 
   render() {
     return (
-    <div>
-    <h1>sign up!!</h1>
+      <div className='App-header'>
+        <img className='logo-small' src= { wokeorjoke_v1 } alt='logo'/>
+        <h2>Sign Up</h2>
       <form onSubmit={ this.submitHandler }>
         <input
           type='text'
