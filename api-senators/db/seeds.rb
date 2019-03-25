@@ -11,7 +11,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
    { name: 'Tammy Baldwin',
      state: 'WI',
@@ -21,7 +23,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'John Barrasso',
      state: 'WY',
@@ -31,7 +35,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
    },
    { name: 'Michael Bennet',
      state: 'CO',
@@ -41,7 +47,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Marsha Blackburn',
      state: 'TN',
@@ -51,7 +59,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
      },
      { name: 'Richard Blumenthal',
      state: 'CT',
@@ -61,7 +71,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Roy Blunt',
      state: 'MO',
@@ -71,7 +83,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Cory Booker',
      state: 'NJ',
@@ -81,7 +95,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'John Boozman',
      state: 'AR',
@@ -91,7 +107,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
    },
    { name: 'Mike Braun',
      state: 'IN',
@@ -101,7 +119,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
    },
    { name: 'Sherrod Brown',
      state: 'OH',
@@ -111,7 +131,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
    },
    { name: 'Richard Burr',
      state: 'NC',
@@ -121,7 +143,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
    },
    { name: 'Maria Cantwell',
      state: 'WA',
@@ -131,7 +155,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
    },
    { name: 'Shelley Moore Capito',
      state: 'WV',
@@ -141,7 +167,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
      },
    { name: 'Benjamin Cardin',
      state: 'MD',
@@ -151,7 +179,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Thomas Carper',
       state: 'DE',
@@ -161,7 +191,9 @@ senators = Senator.create(
       envi_rating: '0',
       nra_rating: '0',
       trump_rating: '0',
-      user_rating: '0'
+      user_woke: false,
+      user_joke: false,
+      contact: ''
     },
     { name: 'Robert Casey Jr.',
      state: 'PA',
@@ -171,7 +203,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Bill Cassidy',
      state: 'LA',
@@ -181,7 +215,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Susan Collins',
      state: 'ME',
@@ -191,7 +227,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Christopher Coons',
      state: 'DE',
@@ -201,7 +239,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'John Cornyn',
      state: 'TX',
@@ -211,7 +251,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Catherine Cortex Masto',
      state: 'NV',
@@ -221,7 +263,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Tom Cotton',
      state: 'AR',
@@ -231,7 +275,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Kevin Cramer',
      state: 'ND',
@@ -241,7 +287,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Mike Crapo',
      state: 'ID',
@@ -251,7 +299,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Ted Cruz',
      state: 'TX',
@@ -261,7 +311,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Steve Daines',
      state: 'MT',
@@ -271,7 +323,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Tammy Duckworth',
      state: 'IL',
@@ -281,7 +335,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Richard Durbin',
      state: 'IL',
@@ -291,7 +347,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Michael Enzi',
      state: 'WY',
@@ -301,7 +359,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Joni Ernst',
      state: 'IA',
@@ -311,7 +371,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Dianne Feinstein',
      state: 'CA',
@@ -321,7 +383,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Deb Fischer',
      state: 'NE',
@@ -331,7 +395,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Cory Gardner',
      state: 'CO',
@@ -341,7 +407,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Kirsten Gillibrand',
      state: 'NY',
@@ -351,7 +419,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Lindsey Graham',
      state: 'SC',
@@ -361,7 +431,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Chuck Grassley',
      state: 'IA',
@@ -371,7 +443,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Kamala Harris',
      state: 'CA',
@@ -381,7 +455,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Margaret Wood Hassan',
      state: 'NH',
@@ -391,7 +467,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Josh Hawley',
      state: 'MO',
@@ -401,7 +479,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Martin Heinrich',
      state: 'NM',
@@ -411,7 +491,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Mazie Hirono',
      state: 'HI',
@@ -421,7 +503,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Joe Hoeven',
      state: 'ND',
@@ -431,7 +515,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Cindy Hyde-Smith',
      state: 'MS',
@@ -441,7 +527,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'James Inhofe',
      state: 'OK',
@@ -451,7 +539,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Johnny Isakson',
      state: 'GA',
@@ -461,7 +551,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Ron Johnson',
      state: 'WI',
@@ -471,7 +563,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Doug Jones',
      state: 'AL',
@@ -481,7 +575,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Tim Kaine',
      state: 'VA',
@@ -491,7 +587,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'John Kennedy',
      state: 'LA',
@@ -501,7 +599,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Angus King Jr.',
      state: 'ME',
@@ -511,7 +611,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Amy Klobuchar',
      state: 'MN',
@@ -521,7 +623,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'James Lankford',
      state: 'OK',
@@ -531,7 +635,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Patrick Leahy',
      state: 'VT',
@@ -541,7 +647,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Mike Lee',
      state: 'UT',
@@ -551,7 +659,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Joe Manchin III',
      state: 'WV',
@@ -561,7 +671,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Edward Markey',
      state: 'MA',
@@ -571,7 +683,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Mitch McConnell',
      state: 'KY',
@@ -581,7 +695,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Martha McSally',
      state: 'AZ',
@@ -591,7 +707,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Robert Menendez',
      state: 'NJ',
@@ -601,7 +719,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Jeff Merkley',
      state: 'OR',
@@ -611,7 +731,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Jerry Moran',
      state: 'KS',
@@ -621,7 +743,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Lisa Murkowski',
      state: 'AK',
@@ -631,7 +755,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Christopher Murphy',
      state: 'CT',
@@ -641,7 +767,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Patty Murray',
      state: 'WA',
@@ -651,7 +779,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Rand Paul',
      state: 'KY',
@@ -661,7 +791,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'David Perdue',
      state: 'GA',
@@ -671,7 +803,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Gary Peters',
      state: 'MI',
@@ -681,7 +815,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Rob Portman',
      state: 'OH',
@@ -691,7 +827,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Jack Reed',
      state: 'RI',
@@ -701,7 +839,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'James Risch',
      state: 'ID',
@@ -711,7 +851,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Pat Roberts',
      state: 'KS',
@@ -721,7 +863,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Mitt Romney',
      state: 'UT',
@@ -731,7 +875,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Jacky Rosen',
      state: 'NV',
@@ -741,7 +887,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Mike Rounds',
      state: 'SD',
@@ -751,7 +899,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Marco Rubio',
      state: 'FL',
@@ -761,7 +911,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Bernard Sanders',
      state: 'VT',
@@ -771,7 +923,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Ben Sasse',
      state: 'NE',
@@ -781,7 +935,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Brian Schatz',
      state: 'HI',
@@ -791,7 +947,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Charles Schumer',
      state: 'NY',
@@ -801,7 +959,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Tim Scott',
      state: 'SC',
@@ -811,7 +971,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Rick Scott',
      state: 'FL',
@@ -821,7 +983,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Jeanne Shaheen',
      state: 'NH',
@@ -831,7 +995,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Richard Shelby',
      state: 'AL',
@@ -841,7 +1007,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Kyrsten Sinema',
      state: 'AZ',
@@ -851,7 +1019,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Tina Smith',
      state: 'MN',
@@ -861,7 +1031,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Debbier Stabenow',
      state: 'MI',
@@ -871,7 +1043,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Dan Sullivan',
      state: 'AK',
@@ -881,7 +1055,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Jon Tester',
      state: 'MT',
@@ -891,7 +1067,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'John Thune',
      state: 'SD',
@@ -901,7 +1079,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Thom Tillis',
      state: 'NC',
@@ -911,7 +1091,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Patrick Toomey',
      state: 'PA',
@@ -921,7 +1103,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Tom Udall',
      state: 'NM',
@@ -931,7 +1115,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Chris Van Hollen',
      state: 'MD',
@@ -941,7 +1127,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Mark Warner',
      state: 'VA',
@@ -951,7 +1139,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Elizabeth Warren',
      state: 'MA',
@@ -961,7 +1151,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Sheldon Whitehouse',
      state: 'RI',
@@ -971,7 +1163,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Roger Wicker',
      state: 'MS',
@@ -981,7 +1175,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Ron Wyden',
      state: 'OR',
@@ -991,7 +1187,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     },
     { name: 'Todd Young',
      state: 'IN',
@@ -1001,7 +1199,9 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_rating: '0'
+     user_woke: false,
+     user_joke: false,
+     contact: ''
     }
   ]
 )

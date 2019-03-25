@@ -9,7 +9,9 @@ class CreateSenators < ActiveRecord::Migration[5.2]
       t.string "envi_rating"
       t.string "nra_rating"
       t.string "trump_rating"
-      t.string "user_rating"
+      t.boolean "user_woke"
+      t.boolean "user_joke"
+      t.string "contact"
       t.timestamps
     end
   end

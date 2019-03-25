@@ -31,7 +31,9 @@ ActiveRecord::Schema.define(version: 2019_03_13_173301) do
     t.string "envi_rating"
     t.string "nra_rating"
     t.string "trump_rating"
-    t.string "user_rating"
+    t.boolean "user_woke"
+    t.boolean "user_joke"
+    t.string "contact"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
