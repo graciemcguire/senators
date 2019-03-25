@@ -18,7 +18,7 @@ class Profile extends Component {
 
   checkName = () => {
     return !this.props.user ? null
-    : `welcome home, ${ this.props.user.username }.`
+    : `${ this.props.user.username }`
   }
 
   mapSenators = () => {
@@ -34,7 +34,7 @@ class Profile extends Component {
         { this.checkName() }
         <Link to='/main' className='button'>Go rate some senators?</Link>
         <Logout className='button'/>
-        <h1> your rated senators </h1>
+        <h1> { this.checkName() }'s woke senators </h1>
         { this.props.user ? this.mapSenators() : null }
       </div>
     )

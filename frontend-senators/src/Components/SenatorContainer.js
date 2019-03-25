@@ -23,4 +23,11 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(SenatorContainer);
+const mapDispatchToProps = dispatch => ({
+ hideModal: () => dispatch(hideModal()),
+ showModal: (modalProps, modalType) => {
+  dispatch(showModal({ modalProps, modalType }))
+ }
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(SenatorContainer);
