@@ -26,7 +26,7 @@ class SenatorThumbnail extends Component {
       if (this.props.senator){
         return(
           <div className={ renderPartyColor() }
-          onClick={ () => console.log('click', senator) }>
+          onClick={ this.openModal }>
             <h2>{ senator.name }</h2>
             <h3>{ senator.party } - { senator.state }</h3>
           </div>

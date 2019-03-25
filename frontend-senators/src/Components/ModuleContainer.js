@@ -33,7 +33,7 @@ class ModalContainer extends React.Component {
     }
     return (
       <div>
-        <ReactModal
+        <SenatorModal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
@@ -51,7 +51,7 @@ class ModalContainer extends React.Component {
             <button>inside</button>
             <button>the modal</button>
           </form>
-        </ReactModal>
+        </SenatorModal>
       </div>
     )
   }
