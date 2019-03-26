@@ -1,5 +1,5 @@
 class RatingSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :user_rating
   belongs_to :user
   belongs_to :senator
 end

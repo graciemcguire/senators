@@ -10,8 +10,7 @@ class SenatorThumbnail extends Component {
   openModal = (event) => {
     this.props.showModal({
      open: true,
-     title: 'Senator Modal',
-     closeModal: this.closeModal
+     title: 'Senator Modal'
     })
     return <SenatorModule  />
   }
@@ -24,6 +23,11 @@ class SenatorThumbnail extends Component {
     const renderPartyColor = () => {
       return senator.party === 'R' ?
       'senator-card-gop' : 'senator-card-dem'
+    }
+
+    const renderModalPartyColor = () => {
+      return senator.party === 'R' ?
+      'senator-modal-gop' : 'senator-modal-dem'
     }
 
     const renderUserSenators = () => {
@@ -42,18 +46,17 @@ class SenatorThumbnail extends Component {
     }
 
     const renderModals = () => {
-      return <div className={ renderPartyColor() }>
+      return <div className={ renderModalPartyColor() }>
         <img className='thumnail-images' src={ senator.image } alt={ senator.name }/>
         <h2>{ senator.name }</h2>
         <h3>{ senator.party } - { senator.state }</h3>
         <h3>Details:</h3>
         <h3><a href= { senator.contact } target="_blank">Contact { senator.name }</a> </h3>
-        <button>Woke?</button> <button>Joke?</button>
+        <button onClick={ this.props.addWoke }>Woke?</button> <button onClick={ this.props.addWoke }>Joke?</button>
       </div>
     }
 
     return (
-
       <Popup trigger={ renderUserSenators() } modal position= "right center">
         <div className='modal'>
           { renderModals() }
