@@ -7,7 +7,12 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def profile
-    render json: { user: UserSerializer.new(current_user) }, status: :accepted
+    render json: { user: UserSerializer.new(current_user)}, status: :accepted
+  end
+
+  def user_senators
+     @ratings = User.find(current_user.id).ratings.map{|r| RatingSerializer.new(r)}
+    render json: { ratings: @ratings  }, status: :accepted
   end
 
   def create

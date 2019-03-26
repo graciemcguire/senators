@@ -96,6 +96,7 @@ export const fetchingCurrentUser = (token) => {
     }
   })
   .then(resp => resp.json())
+  .catch(console.error)
 }
 
 export const fetchSenators = (token) => {
@@ -110,3 +111,35 @@ export const fetchSenators = (token) => {
       .then(senators => dispatch(stateSenators(senators)));
   };
 };
+
+export const handleCreateRating = (userId, senatorId, wokeOrJoke) => {
+  return dipatch => {
+    fetch('http://localhost:3001/api/v1/ratings', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      },
+      body: JSON.stringify({
+        user_id: userId,
+        senator_id: senatorId,
+        user_rating: wokeOrJoke
+      })
+    })
+    .then(r => r.json())
+    .then(console.log)
+  }
+}
+
+export const fetchUserSenators = (token) => {
+  return dispatch => {
+    fetch('http://localhost:3001/api/v1/user_rating', {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`
+      },
+    })
+    .then(r => r.json())
+    .then(console.log)
+  }
+}

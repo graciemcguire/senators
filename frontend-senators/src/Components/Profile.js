@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import Logout from './Logout'
 import { Link } from 'react-router-dom'
 import SenatorThumbnail from './SenatorThumbnail'
-import { setAndFetchUser } from '../Redux/userActions'
+import { setAndFetchUser, fetchUserSenators } from '../Redux/userActions'
 
 class Profile extends Component {
 
@@ -13,35 +13,36 @@ class Profile extends Component {
 
     if (token) {
       this.props.setAndFetchUser(token)
+      this.props.fetchUserSenators(token)
     }
   }
+  //
+  // checkName = () => {
+  //   return !this.props.user ? null
+  //   : `${ this.props.user.username }`
+  // }
 
-  checkName = () => {
-    return !this.props.user ? null
-    : `${ this.props.user.username }`
-  }
-
-  mapSenators = () => {
-    return this.props.user.senators.map(senator => {
-      return <SenatorThumbnail key={ senator.id } senator={ senator }/>
-    })
-  }
+  // mapSenators = () => {
+  //   return this.props.user.senators.map(senator => {
+  //     return <SenatorThumbnail key={ senator.id } senator={ senator }/>
+  //   })
+  // }
 
   render() {
     console.log('profile page:', this.props);
     return (
       <div >
-        { this.checkName() }
-        <Link to='/main' className='button'>Go rate some senators?</Link>
+        { /*this.checkName()*/ }
+        <Link to='/profile' className='button'>Go rate some senators?</Link>
         <Logout className='button'/>
-        <h1> { this.checkName() }'s woke senators </h1>
-        { this.props.user ? this.mapSenators() : null }
+        <h1>  senators </h1>
       </div>
     )
   }
 }
 
 const mapStateToProps = (state) => {
+  console.log('state', state);
   return {
     user: state.auth.user
   }
@@ -49,7 +50,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    setAndFetchUser: (token) => dispatch(setAndFetchUser(token))
+    setAndFetchUser: (token) => dispatch(setAndFetchUser(token)),
+    fetchUserSenators: (token) =>
+    dispatch(fetchUserSenators(token))
   }
 }
 

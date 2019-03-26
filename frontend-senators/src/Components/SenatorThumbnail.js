@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Popup from "reactjs-popup";
-import { addUserSenators } from '../Redux/userActions'
+import { handleCreateRating } from '../Redux/userActions'
 
 class SenatorThumbnail extends Component {
 
   render(){
     console.log(this.props);
-    const { senator } = this.props
+    const { senator, user } = this.props
 
     const renderPartyColor = () => {
       return senator.party === 'R' ?
@@ -34,6 +34,12 @@ class SenatorThumbnail extends Component {
       }
     }
 
+    const wokeOrJokeBtn = (e) => {
+      e.preventDefault()
+      console.log('milan 4ever');
+      this.props.handleCreateRating(user.id, senator.id, e.target.value)
+    }
+
     const renderModals = () => {
       return <div className={ renderModalPartyColor() }>
         <img className='thumnail-images' src={ senator.image } alt={ senator.name }/>
@@ -41,8 +47,8 @@ class SenatorThumbnail extends Component {
         <h3>{ senator.party } - { senator.state }</h3>
         <h3>Details:</h3>
         <h3><a href= { senator.contact } target="_blank">Contact { senator.name }</a> </h3>
-        <button onClick={ () => console.log('woke btn', this.props) }>Woke?</button>
-        <button onClick={ () => console.log('joke btn', this.props) }>Joke?</button>
+        <button value='woke' onClick={ (e) => wokeOrJokeBtn(e) }>Woke?</button>
+        <button value='joke' onClick={ (e) => wokeOrJokeBtn(e) }>Joke?</button>
       </div>
     }
 
@@ -62,8 +68,10 @@ class SenatorThumbnail extends Component {
     }
   }
 
-  const mapDispatchToProps = () => {
-
+  const mapDispatchToProps = (dispatch) => {
+    return {
+      handleCreateRating: (userId, senatorId, wokeOrJoke) => dispatch(handleCreateRating(userId, senatorId, wokeOrJoke))
+    }
   }
 
-export default connect(mapStateToProps)(SenatorThumbnail);
+export default connect(mapStateToProps, mapDispatchToProps)(SenatorThumbnail);
