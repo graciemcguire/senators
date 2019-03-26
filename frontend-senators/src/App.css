@@ -90,7 +90,13 @@
   background-color: #1E656D;
 }
 
-/* colors = 
+.thumnail-images {
+  justify-content: center;
+  width: 80%;
+  padding-top: 40px;
+}
+
+/* colors =
 navy - #00293C
 blue - #1E656D
 ivory - #F1F3CE
