@@ -130,8 +130,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.braun.senate.gov/contact-mike',
+     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Mike_Braun%2C_Official_Portrait%2C_116th_Congress.jpg/220px-Mike_Braun%2C_Official_Portrait%2C_116th_Congress.jpg'
    },
    { name: 'Sherrod Brown',
      state: 'OH',
@@ -143,8 +143,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.brown.senate.gov/contact/email',
+     image: 'https://pbs.twimg.com/profile_images/523158370333638657/cLmYIfYa_400x400.jpeg'
    },
    { name: 'Richard Burr',
      state: 'NC',
@@ -156,8 +156,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.burr.senate.gov/contact/',
+     image: 'https://pbs.twimg.com/profile_images/588079658819653632/wwdO4Eqv_400x400.jpg'
    },
    { name: 'Maria Cantwell',
      state: 'WA',
@@ -169,8 +169,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.cantwell.senate.gov/contact/email',
+     image: 'https://votesmart.org/canphoto/27122_lg.jpg'
    },
    { name: 'Shelley Moore Capito',
      state: 'WV',
@@ -182,8 +182,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.capito.senate.gov/contact/contact-shelley',
+     image: 'https://pbs.twimg.com/profile_images/570247761044312064/gBmXhrin.jpeg'
      },
    { name: 'Benjamin Cardin',
      state: 'MD',
@@ -195,8 +195,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.cardin.senate.gov/contact',
+     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Ben_Cardin_official_Senate_portrait.jpg/440px-Ben_Cardin_official_Senate_portrait.jpg'
     },
     { name: 'Thomas Carper',
       state: 'DE',
@@ -208,8 +208,8 @@ senators = Senator.create(
       trump_rating: '0',
       user_woke: false,
       user_joke: false,
-      contact: '',
-      image: ''
+      contact: 'https://www.carper.senate.gov/public/index.cfm/contact',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tom_Carper%2C_official_portrait%2C_112th_Congress_%28cropped%29.jpg/832px-Tom_Carper%2C_official_portrait%2C_112th_Congress_%28cropped%29.jpg'
     },
     { name: 'Robert Casey Jr.',
      state: 'PA',
@@ -221,8 +221,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.casey.senate.gov/contact',
+     image: 'https://cdn.britannica.com/86/132786-004-FC70DDEA.jpg'
     },
     { name: 'Bill Cassidy',
      state: 'LA',
@@ -234,8 +234,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.cassidy.senate.gov/contact/',
+     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Bill_Cassidy_official_Senate_photo.jpg/440px-Bill_Cassidy_official_Senate_photo.jpg'
     },
     { name: 'Susan Collins',
      state: 'ME',
@@ -247,8 +247,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.collins.senate.gov/contact',
+     image: 'https://www.bates.edu/news/files/2017/04/Collins-Susan-2017-honorand-1389-vert-1080x.jpg'
     },
     { name: 'Christopher Coons',
      state: 'DE',
@@ -260,8 +260,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.coons.senate.gov/contact',
+     image: 'https://votesmart.org/canphoto/122834_lg.jpg'
     },
     { name: 'John Cornyn',
      state: 'TX',
@@ -273,10 +273,10 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.cornyn.senate.gov/contact',
+     image: 'https://yt3.ggpht.com/a-/AAuE7mCFnI3jzjVOKXbwFZwhjQd4RLSMS4iX7d-25Q=s900-mo-c-c0xffffffff-rj-k-no'
     },
-    { name: 'Catherine Cortex Masto',
+    { name: 'Catherine Cortez Masto',
      state: 'NV',
      party: 'D',
      naacp_rating: '0',
@@ -286,8 +286,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.cortezmasto.senate.gov/contact',
+     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Catherine_Cortez_Masto_official_portrait.jpg/1200px-Catherine_Cortez_Masto_official_portrait.jpg'
     },
     { name: 'Tom Cotton',
      state: 'AR',
@@ -299,8 +299,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.cotton.senate.gov/?p=contact',
+     image: 'https://pbs.twimg.com/profile_images/568884049058357248/M-VeVL9u.jpeg'
     },
     { name: 'Kevin Cramer',
      state: 'ND',
@@ -312,8 +312,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.cramer.senate.gov/contact_kevin',
+     image: 'https://radiocms-images.us1.eldarioncloud.com/resize/1200/https://storage.googleapis.com/media.mwcradio.com/podblogs/uploads/Kevin_Cramer_official_photo.jpg'
     },
     { name: 'Mike Crapo',
      state: 'ID',
@@ -325,8 +325,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.crapo.senate.gov/contact/email-me',
+     image: 'https://www.boisestatepublicradio.org/sites/idaho/files/styles/x_large/public/201902/Mike_Crapo_official_photo.jpg'
     },
     { name: 'Ted Cruz',
      state: 'TX',
@@ -338,8 +338,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.cruz.senate.gov/?p=form&id=16',
+     image: 'https://1.bp.blogspot.com/-fw6r5Ozi96E/WJzUfUh5XgI/AAAAAAAAAaA/HrsVuuk0sr0qQREAb9nit7VMjrxUp1_zQCPcBGAYYCw/s640/The%2BZodiac%2BKiller%2B1969.png'
     },
     { name: 'Steve Daines',
      state: 'MT',
@@ -351,8 +351,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.daines.senate.gov/connect/email-steve',
+     image: 'https://bloximages.newyork1.vip.townnews.com/montanakaimin.com/content/tncms/assets/v3/editorial/f/01/f0195f92-60bd-11e4-abc0-0017a43b2370/54531cc17a09a.image.jpg?resize=400%2C601'
     },
     { name: 'Tammy Duckworth',
      state: 'IL',
@@ -364,8 +364,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://action.tammyduckworth.com/page/signup/contact-us',
+     image: 'https://pbs.twimg.com/profile_images/1003647516754305025/ITpJ_LMV_400x400.jpg'
     },
     { name: 'Richard Durbin',
      state: 'IL',

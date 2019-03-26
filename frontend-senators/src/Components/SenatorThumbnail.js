@@ -33,7 +33,6 @@ class SenatorThumbnail extends Component {
         return(
           <div className={ renderPartyColor() }
           onClick>
-            <img src={ senator.image } alt={ senator.name } />
             <h2>{ senator.name }</h2>
             <h3>{ senator.party } - { senator.state }</h3>
           </div>
