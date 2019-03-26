@@ -11,8 +11,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.alexander.senate.gov/public/index.cfm/email',
      image: 'https://upload.wikimedia.org/wikipedia/commons/2/2b/Lamar_Alexander_official_photo.jpg'
     },
@@ -24,8 +23,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.baldwin.senate.gov/feedback',
      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Tammy_Baldwin%2C_official_portrait%2C_113th_Congress.jpg/946px-Tammy_Baldwin%2C_official_portrait%2C_113th_Congress.jpg'
     },
@@ -37,8 +35,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.barrasso.senate.gov/public/index.cfm/contact-form',
      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/John_Barrasso_official_portrait_112th_Congress.jpg/440px-John_Barrasso_official_portrait_112th_Congress.jpg'
    },
@@ -50,8 +47,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://michaelbennet.com/about/',
      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Michael_Bennet_Official_Photo.jpg/440px-Michael_Bennet_Official_Photo.jpg'
     },
@@ -63,8 +59,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.blackburn.senate.gov/contact_marsha',
      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Sen._Marsha_Blackburn_%28R-TN%29_official_headshot_-_116th_Congress.jpg/440px-Sen._Marsha_Blackburn_%28R-TN%29_official_headshot_-_116th_Congress.jpg'
      },
@@ -76,8 +71,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.blumenthal.senate.gov/contact/',
      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Richard_Blumenthal_Official_Portrait.jpg/1200px-Richard_Blumenthal_Official_Portrait.jpg'
     },
@@ -89,8 +83,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.blunt.senate.gov/contact/contact-roy',
      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Roy_Blunt%2C_Official_Portrait%2C_112th_Congress.jpg/440px-Roy_Blunt%2C_Official_Portrait%2C_112th_Congress.jpg'
     },
@@ -102,8 +95,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.booker.senate.gov/?p=contact',
      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Cory_Booker%2C_official_portrait%2C_114th_Congress.jpg/440px-Cory_Booker%2C_official_portrait%2C_114th_Congress.jpg'
     },
@@ -115,8 +107,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.boozman.senate.gov/public/index.cfm/contact',
      image: 'https://pbs.twimg.com/profile_images/970776346250104834/i7B-Xp9G_400x400.jpg'
    },
@@ -128,8 +119,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.braun.senate.gov/contact-mike',
      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Mike_Braun%2C_Official_Portrait%2C_116th_Congress.jpg/220px-Mike_Braun%2C_Official_Portrait%2C_116th_Congress.jpg'
    },
@@ -141,8 +131,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.brown.senate.gov/contact/email',
      image: 'https://pbs.twimg.com/profile_images/523158370333638657/cLmYIfYa_400x400.jpeg'
    },
@@ -154,8 +143,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.burr.senate.gov/contact/',
      image: 'https://pbs.twimg.com/profile_images/588079658819653632/wwdO4Eqv_400x400.jpg'
    },
@@ -167,8 +155,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.cantwell.senate.gov/contact/email',
      image: 'https://votesmart.org/canphoto/27122_lg.jpg'
    },
@@ -180,8 +167,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.capito.senate.gov/contact/contact-shelley',
      image: 'https://pbs.twimg.com/profile_images/570247761044312064/gBmXhrin.jpeg'
      },
@@ -193,8 +179,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.cardin.senate.gov/contact',
      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Ben_Cardin_official_Senate_portrait.jpg/440px-Ben_Cardin_official_Senate_portrait.jpg'
     },
@@ -206,8 +191,7 @@ senators = Senator.create(
       envi_rating: '0',
       nra_rating: '0',
       trump_rating: '0',
-      user_woke: false,
-      user_joke: false,
+      user_rating: '',
       contact: 'https://www.carper.senate.gov/public/index.cfm/contact',
       image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tom_Carper%2C_official_portrait%2C_112th_Congress_%28cropped%29.jpg/832px-Tom_Carper%2C_official_portrait%2C_112th_Congress_%28cropped%29.jpg'
     },
@@ -219,8 +203,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.casey.senate.gov/contact',
      image: 'https://cdn.britannica.com/86/132786-004-FC70DDEA.jpg'
     },
@@ -232,8 +215,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.cassidy.senate.gov/contact/',
      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Bill_Cassidy_official_Senate_photo.jpg/440px-Bill_Cassidy_official_Senate_photo.jpg'
     },
@@ -245,8 +227,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.collins.senate.gov/contact',
      image: 'https://www.bates.edu/news/files/2017/04/Collins-Susan-2017-honorand-1389-vert-1080x.jpg'
     },
@@ -258,8 +239,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.coons.senate.gov/contact',
      image: 'https://votesmart.org/canphoto/122834_lg.jpg'
     },
@@ -271,8 +251,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.cornyn.senate.gov/contact',
      image: 'https://yt3.ggpht.com/a-/AAuE7mCFnI3jzjVOKXbwFZwhjQd4RLSMS4iX7d-25Q=s900-mo-c-c0xffffffff-rj-k-no'
     },
@@ -284,8 +263,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.cortezmasto.senate.gov/contact',
      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Catherine_Cortez_Masto_official_portrait.jpg/1200px-Catherine_Cortez_Masto_official_portrait.jpg'
     },
@@ -297,8 +275,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.cotton.senate.gov/?p=contact',
      image: 'https://pbs.twimg.com/profile_images/568884049058357248/M-VeVL9u.jpeg'
     },
@@ -310,8 +287,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.cramer.senate.gov/contact_kevin',
      image: 'https://radiocms-images.us1.eldarioncloud.com/resize/1200/https://storage.googleapis.com/media.mwcradio.com/podblogs/uploads/Kevin_Cramer_official_photo.jpg'
     },
@@ -323,8 +299,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.crapo.senate.gov/contact/email-me',
      image: 'https://www.boisestatepublicradio.org/sites/idaho/files/styles/x_large/public/201902/Mike_Crapo_official_photo.jpg'
     },
@@ -336,8 +311,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.cruz.senate.gov/?p=form&id=16',
      image: 'https://1.bp.blogspot.com/-fw6r5Ozi96E/WJzUfUh5XgI/AAAAAAAAAaA/HrsVuuk0sr0qQREAb9nit7VMjrxUp1_zQCPcBGAYYCw/s640/The%2BZodiac%2BKiller%2B1969.png'
     },
@@ -349,8 +323,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.daines.senate.gov/connect/email-steve',
      image: 'https://bloximages.newyork1.vip.townnews.com/montanakaimin.com/content/tncms/assets/v3/editorial/f/01/f0195f92-60bd-11e4-abc0-0017a43b2370/54531cc17a09a.image.jpg?resize=400%2C601'
     },
@@ -362,8 +335,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://action.tammyduckworth.com/page/signup/contact-us',
      image: 'https://pbs.twimg.com/profile_images/1003647516754305025/ITpJ_LMV_400x400.jpg'
     },
@@ -375,8 +347,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.durbin.senate.gov/contact/email',
      image: 'http://mediad.publicbroadcasting.net/p/wsiu/files/styles/x_large/public/201508/durbin.jpg'
     },
@@ -388,8 +359,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.enzi.senate.gov/public/index.cfm/e-mail-senator-enzi',
      image: 'https://prayforpoliticians.files.wordpress.com/2010/09/sen-michael-enzi-r-wyoming.jpg'
     },
@@ -401,8 +371,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.ernst.senate.gov/public/index.cfm/email-joni',
      image: 'http://mediad.publicbroadcasting.net/p/kwit/files/styles/x_large/public/201901/joni_ernst.jpeg'
     },
@@ -414,8 +383,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.feinstein.senate.gov/public/index.cfm/contact',
      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Dianne_Feinstein%2C_official_Senate_photo_2.jpg/440px-Dianne_Feinstein%2C_official_Senate_photo_2.jpg'
     },
@@ -427,8 +395,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.fischer.senate.gov/public/index.cfm/contact',
      image: 'https://d3n8a8pro7vhmx.cloudfront.net/hddata/pages/2110/features/original/debfischer_home_portrait5.jpg?1543592969'
     },
@@ -440,8 +407,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.gardner.senate.gov/contact-cory/email-cory',
      image: 'https://media1.fdncms.com/csindy/imager/u/original/6243520/1200px-cory_gardner_official_portrait_112th_congress.jpg'
     },
@@ -453,8 +419,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.gillibrand.senate.gov/contact/email-me',
      image: 'https://genconnectu.com/wp-content/uploads/2015/08/kirsten-gillibrand.jpg'
     },
@@ -466,8 +431,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.lgraham.senate.gov/public/index.cfm/e-mail-senator-graham',
      image: 'https://www.smdp.com/wp-content/uploads/2019/03/1920px-Lindsey_Graham_Official_Portrait_2006.jpg'
     },
@@ -479,8 +443,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.grassley.senate.gov/constituents/questions-and-comments',
      image: 'https://americanagnetwork.com/wp-content/uploads/2018/03/Chuck_Grassley_official_photo_2017.jpg'
     },
@@ -492,8 +455,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.harris.senate.gov/contact/email',
      image: 'https://lasentinel.net/wp-content/uploads/sites/5/2018/03/kamalaharris_official_hires.jpg'
     },
@@ -505,8 +467,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.hassan.senate.gov/contact/email',
      image: 'https://www.senate.gov/artandhistory/history/resources/graphic/xlarge/HassanMaggie.jpg'
     },
@@ -518,8 +479,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.hawley.senate.gov/contact-senator-hawley',
      image: 'https://d3n8a8pro7vhmx.cloudfront.net/mbamissouri/mailings/4/attachments/original/hawley.jpg?1534215879'
     },
@@ -531,8 +491,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.heinrich.senate.gov/contact/write-martin',
      image: 'https://cdn.civil.services/us-senate/headshots/1024x1024/martin-heinrich.jpg'
     },
@@ -544,8 +503,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.hirono.senate.gov/contact',
      image: 'http://honolulumagazine-images.dashdigital.com/images/2018/07-18/MazieHirono_headshot.jpg?ver=1532392971'
     },
@@ -557,8 +515,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.hoeven.senate.gov/contact/email-the-senator',
      image: 'http://editions.lib.umn.edu/smartpolitics/wp-content/uploads/sites/2/2016/11/johnhoeven30.jpg'
     },
@@ -570,8 +527,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://cindyhydesmith.com/contact/',
      image: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/Cindy_Hyde-Smith_official_photo.jpg'
     },
@@ -583,8 +539,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.inhofe.senate.gov/contact',
      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Jim_Inhofe_official_portrait.jpg/440px-Jim_Inhofe_official_portrait.jpg'
     },
@@ -596,8 +551,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: 'https://www.isakson.senate.gov/public/index.cfm/contact-me',
      image: 'http://modernizeaid.net/wp-content/uploads/2011/04/isakson.jpg'
     },
@@ -609,8 +563,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -622,8 +575,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -635,8 +587,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -648,8 +599,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -661,8 +611,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -674,8 +623,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -687,8 +635,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -700,8 +647,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -713,8 +659,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -726,8 +671,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -739,8 +683,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -752,8 +695,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -765,8 +707,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -778,8 +719,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -791,8 +731,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -804,8 +743,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -817,8 +755,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -830,8 +767,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -843,8 +779,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -856,8 +791,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -869,8 +803,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -882,8 +815,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -895,8 +827,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -908,8 +839,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -921,8 +851,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -934,8 +863,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -947,8 +875,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -960,8 +887,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -973,8 +899,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -986,8 +911,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -999,8 +923,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1012,8 +935,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1025,8 +947,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1038,8 +959,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1051,8 +971,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1064,8 +983,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1077,8 +995,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1090,8 +1007,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1103,8 +1019,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1116,8 +1031,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1129,8 +1043,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1142,8 +1055,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1155,8 +1067,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1168,8 +1079,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1181,8 +1091,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1194,8 +1103,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1207,8 +1115,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1220,8 +1127,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1233,8 +1139,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1246,8 +1151,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1259,8 +1163,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1272,8 +1175,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1285,8 +1187,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     },
@@ -1298,8 +1199,7 @@ senators = Senator.create(
      envi_rating: '0',
      nra_rating: '0',
      trump_rating: '0',
-     user_woke: false,
-     user_joke: false,
+     user_rating: '',
      contact: '',
      image: ''
     }
