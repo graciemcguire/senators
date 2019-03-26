@@ -377,8 +377,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.durbin.senate.gov/contact/email',
+     image: 'http://mediad.publicbroadcasting.net/p/wsiu/files/styles/x_large/public/201508/durbin.jpg'
     },
     { name: 'Michael Enzi',
      state: 'WY',
@@ -390,8 +390,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.enzi.senate.gov/public/index.cfm/e-mail-senator-enzi',
+     image: 'https://prayforpoliticians.files.wordpress.com/2010/09/sen-michael-enzi-r-wyoming.jpg'
     },
     { name: 'Joni Ernst',
      state: 'IA',
@@ -403,8 +403,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.ernst.senate.gov/public/index.cfm/email-joni',
+     image: 'http://mediad.publicbroadcasting.net/p/kwit/files/styles/x_large/public/201901/joni_ernst.jpeg'
     },
     { name: 'Dianne Feinstein',
      state: 'CA',
@@ -416,8 +416,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.feinstein.senate.gov/public/index.cfm/contact',
+     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Dianne_Feinstein%2C_official_Senate_photo_2.jpg/440px-Dianne_Feinstein%2C_official_Senate_photo_2.jpg'
     },
     { name: 'Deb Fischer',
      state: 'NE',
@@ -429,8 +429,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.fischer.senate.gov/public/index.cfm/contact',
+     image: 'https://d3n8a8pro7vhmx.cloudfront.net/hddata/pages/2110/features/original/debfischer_home_portrait5.jpg?1543592969'
     },
     { name: 'Cory Gardner',
      state: 'CO',
@@ -442,8 +442,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.gardner.senate.gov/contact-cory/email-cory',
+     image: 'https://media1.fdncms.com/csindy/imager/u/original/6243520/1200px-cory_gardner_official_portrait_112th_congress.jpg'
     },
     { name: 'Kirsten Gillibrand',
      state: 'NY',
@@ -455,8 +455,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.gillibrand.senate.gov/contact/email-me',
+     image: 'https://genconnectu.com/wp-content/uploads/2015/08/kirsten-gillibrand.jpg'
     },
     { name: 'Lindsey Graham',
      state: 'SC',
@@ -468,8 +468,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.lgraham.senate.gov/public/index.cfm/e-mail-senator-graham',
+     image: 'https://www.smdp.com/wp-content/uploads/2019/03/1920px-Lindsey_Graham_Official_Portrait_2006.jpg'
     },
     { name: 'Chuck Grassley',
      state: 'IA',
@@ -481,8 +481,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.grassley.senate.gov/constituents/questions-and-comments',
+     image: 'https://americanagnetwork.com/wp-content/uploads/2018/03/Chuck_Grassley_official_photo_2017.jpg'
     },
     { name: 'Kamala Harris',
      state: 'CA',
@@ -494,8 +494,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.harris.senate.gov/contact/email',
+     image: 'https://lasentinel.net/wp-content/uploads/sites/5/2018/03/kamalaharris_official_hires.jpg'
     },
     { name: 'Margaret Wood Hassan',
      state: 'NH',
@@ -507,8 +507,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.hassan.senate.gov/contact/email',
+     image: 'https://www.senate.gov/artandhistory/history/resources/graphic/xlarge/HassanMaggie.jpg'
     },
     { name: 'Josh Hawley',
      state: 'MO',
@@ -520,8 +520,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.hawley.senate.gov/contact-senator-hawley',
+     image: 'https://d3n8a8pro7vhmx.cloudfront.net/mbamissouri/mailings/4/attachments/original/hawley.jpg?1534215879'
     },
     { name: 'Martin Heinrich',
      state: 'NM',
@@ -533,8 +533,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.heinrich.senate.gov/contact/write-martin',
+     image: 'https://cdn.civil.services/us-senate/headshots/1024x1024/martin-heinrich.jpg'
     },
     { name: 'Mazie Hirono',
      state: 'HI',
@@ -546,8 +546,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.hirono.senate.gov/contact',
+     image: 'http://honolulumagazine-images.dashdigital.com/images/2018/07-18/MazieHirono_headshot.jpg?ver=1532392971'
     },
     { name: 'Joe Hoeven',
      state: 'ND',
@@ -559,8 +559,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.hoeven.senate.gov/contact/email-the-senator',
+     image: 'http://editions.lib.umn.edu/smartpolitics/wp-content/uploads/sites/2/2016/11/johnhoeven30.jpg'
     },
     { name: 'Cindy Hyde-Smith',
      state: 'MS',
@@ -572,8 +572,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://cindyhydesmith.com/contact/',
+     image: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/Cindy_Hyde-Smith_official_photo.jpg'
     },
     { name: 'James Inhofe',
      state: 'OK',
@@ -585,8 +585,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.inhofe.senate.gov/contact',
+     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Jim_Inhofe_official_portrait.jpg/440px-Jim_Inhofe_official_portrait.jpg'
     },
     { name: 'Johnny Isakson',
      state: 'GA',
@@ -598,8 +598,8 @@ senators = Senator.create(
      trump_rating: '0',
      user_woke: false,
      user_joke: false,
-     contact: '',
-     image: ''
+     contact: 'https://www.isakson.senate.gov/public/index.cfm/contact-me',
+     image: 'http://modernizeaid.net/wp-content/uploads/2011/04/isakson.jpg'
     },
     { name: 'Ron Johnson',
      state: 'WI',
