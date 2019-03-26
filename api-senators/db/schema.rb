@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2019_03_13_173301) do
   create_table "ratings", force: :cascade do |t|
     t.integer "senator_id"
     t.integer "user_id"
+    t.string "user_rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -31,7 +32,6 @@ ActiveRecord::Schema.define(version: 2019_03_13_173301) do
     t.string "envi_rating"
     t.string "nra_rating"
     t.string "trump_rating"
-    t.string "user_rating"
     t.string "contact"
     t.string "image"
     t.datetime "created_at", null: false

@@ -111,7 +111,7 @@ export const fetchSenators = (token) => {
   };
 };
 
-const handleCreateUserReview = (user, review) => {
+const rateSenator = (user, review) => {
   let url = 'http://localhost:3001/reviews'
   let options = {
     method: 'POST',
