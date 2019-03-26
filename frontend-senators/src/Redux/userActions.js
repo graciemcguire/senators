@@ -18,6 +18,16 @@ export const updateUserFromFetch = (user) => ({
   payload: { user }
 })
 
+export const stateSenators = senators => ({
+  type: 'SENATORS_ADDED_TO_STATE',
+  payload: { senators }
+})
+
+export const addUserSenators = user_senators => ({
+  type: 'ADD_USER_SENATOR',
+  payload: { user_senators }
+})
+
 export const loginFetch = (e) => {
   return fetch("http://localhost:3001/api/v1/login", {
     method: "POST",
@@ -101,7 +111,21 @@ export const fetchSenators = (token) => {
   };
 };
 
-export const stateSenators = senators => ({
-  type: 'SENATORS_ADDED_TO_STATE',
-  payload: { senators }
-})
+const handleCreateUserReview = (user, review) => {
+  let url = 'http://localhost:3001/reviews'
+  let options = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`
+    },
+    body: JSON.stringify({
+      user_id: user.id,
+      senator_id: senator.id,
+      user_senator: review
+    })
+  }
+  fetch(url, options)
+    .then(res => res.json())
+    .then(console.log)
+}

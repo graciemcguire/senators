@@ -20,7 +20,7 @@ const userReducer = (state = initialState, action) => {
       return { ...state, senators: action.payload }
     }
     case 'ADD_USER_SENATOR': {
-      return { ...stste, user_senators: action.payload }
+      return { ...state, user_senators: action.payload }
     }
 
     default:

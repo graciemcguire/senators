@@ -35,7 +35,7 @@ class App extends Component {
           <Route path='/profile' component={ Profile }/>
           <Route path='/senators' component={ SenatorContainer }/>
           <Route path='/main' component={ MainContainer }/>
-          <Route path='/' component={ Home }/>
+          <Route path='/*' component={ Home }/>
         </Switch>
       </div>
     );
