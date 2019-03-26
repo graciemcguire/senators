@@ -47,14 +47,13 @@ class SenatorThumbnail extends Component {
         <h2>{ senator.name }</h2>
         <h3>{ senator.party } - { senator.state }</h3>
         <h3>Details:</h3>
-        <h3><a href= { senator.contact }>Contact { senator.name }</a> </h3>
+        <h3><a href= { senator.contact } target="_blank">Contact { senator.name }</a> </h3>
         <button>Woke?</button> <button>Joke?</button>
       </div>
     }
 
-
-
     return (
+
       <Popup trigger={ renderUserSenators() } modal position= "right center">
         <div className='modal'>
           { renderModals() }

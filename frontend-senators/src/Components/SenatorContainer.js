@@ -1,12 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import SenatorThumbnail from './SenatorThumbnail'
+import Nav from './Nav'
 
 const SenatorContainer = props => {
 
   return(
+    <Fragment>
+      <Nav />
     <div>
       <h1>All senators</h1>
+    </div>
     <div className= 'senator-grid'>
 
       { props.senators.senators ?
@@ -14,9 +18,9 @@ const SenatorContainer = props => {
         <SenatorThumbnail
         key={ senator.id }
         senator={ senator }/>
-      )) : console.log(props.senators.senators) }
-      </div>
+      )) : console.log(props.senators) }
     </div>
+    </Fragment>
   )
 }
 
