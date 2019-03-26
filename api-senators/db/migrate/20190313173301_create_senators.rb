@@ -9,7 +9,6 @@ class CreateSenators < ActiveRecord::Migration[5.2]
       t.string "envi_rating"
       t.string "nra_rating"
       t.string "trump_rating"
-      t.string "user_rating"
       t.string "contact"
       t.string "image"
       t.timestamps

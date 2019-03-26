@@ -110,22 +110,3 @@ export const fetchSenators = (token) => {
       .then(senators => dispatch(stateSenators(senators)));
   };
 };
-
-const rateSenator = (user, review) => {
-  let url = 'http://localhost:3001/reviews'
-  let options = {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${token}`
-    },
-    body: JSON.stringify({
-      user_id: user.id,
-      senator_id: senator.id,
-      user_senator: review
-    })
-  }
-  fetch(url, options)
-    .then(res => res.json())
-    .then(console.log)
-}

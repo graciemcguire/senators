@@ -6,7 +6,9 @@ import { addUserSenators } from '../Redux/userActions'
 class SenatorThumbnail extends Component {
 
   render(){
+    console.log(this.props);
     const { senator } = this.props
+
     const renderPartyColor = () => {
       return senator.party === 'R' ?
       'senator-card-gop' : 'senator-card-dem'
@@ -58,6 +60,10 @@ class SenatorThumbnail extends Component {
     return {
       user: state.auth.user
     }
+  }
+
+  const mapDispatchToProps = () => {
+
   }
 
 export default connect(mapStateToProps)(SenatorThumbnail);
