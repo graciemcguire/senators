@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { signUpAndFetch } from '../Redux/userActions'
 import { connect } from 'react-redux'
-import { Redirect, Link } from 'react-router-dom'
+import {  Link } from 'react-router-dom'
 import wokeorjoke_v1 from '../wokeorjoke_v1.svg'
 
 class Signup extends Component {

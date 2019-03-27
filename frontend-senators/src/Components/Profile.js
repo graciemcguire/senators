@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
 import SenatorThumbnail from './SenatorThumbnail'
 import { setAndFetchUser, fetchUserSenators } from '../Redux/userActions'
 import Nav from './Nav'
@@ -8,7 +7,6 @@ import Nav from './Nav'
 class Profile extends Component {
 
   componentDidMount () {
-    console.log(this.props);
     const token = localStorage.getItem('token')
 
     if (token) {
@@ -24,7 +22,6 @@ class Profile extends Component {
   // }
 
   render() {
-    console.log('profile page:', this.props);
     return (
       <div >
       <Nav />
@@ -36,10 +33,9 @@ class Profile extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log('state', state);
   return {
     user: state.auth.user,
-    senators: state.senators
+    user_senators: state.user_senators
   }
 }
 

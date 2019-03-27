@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import MainContainer from './MainContainer'
-import Login from './Login'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import wokeorjoke_v1 from '../wokeorjoke_v1.svg'

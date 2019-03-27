@@ -45,7 +45,7 @@ class SenatorThumbnail extends Component {
         <h2>{ senator.name }</h2>
         <h3>{ senator.party } - { senator.state }</h3>
         <h3>Details:</h3>
-        <h3><a href= { senator.contact } target="_blank">Contact { senator.name }</a> </h3>
+        <h3><a href= { senator.contact } target="_blank" rel="noopener noreferrer">Contact { senator.name }</a> </h3>
         <button value='woke' onClick={ (e) => wokeOrJokeBtn(e) }>Woke?</button>
         <button value='joke' onClick={ (e) => wokeOrJokeBtn(e) }>Joke?</button>
       </div>

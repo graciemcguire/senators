@@ -23,9 +23,9 @@ export const stateSenators = senators => ({
   payload: { senators }
 })
 
-export const addUserSenators = user_senators => ({
-  type: 'ADD_USER_SENATOR',
-  payload: { user_senators }
+export const createRating = ratings => ({
+  type: 'CREATE_RATING',
+  payload: { ratings }
 })
 
 export const loginFetch = (e) => {
@@ -128,10 +128,9 @@ export const handleCreateRating = (userId, senatorId, wokeOrJoke) => {
       })
     })
     .then(r => r.json())
-    .then(data => dispatch(addUserSenators(data)))
+    .then(data => dispatch(createRating(data)))
   }
 }
-
 
 export const fetchUserSenators = (token) => {
   return dispatch => {
@@ -142,6 +141,6 @@ export const fetchUserSenators = (token) => {
       },
     })
     .then(r => r.json())
-    .then(data => console.log('this', data))
+    .then(userSenators => console.log('user-senators', userSenators))
   }
 }

@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Route, Switch, withRouter } from 'react-router-dom'
 
 import { connect } from 'react-redux'
 import { setAndFetchUser, fetchSenators } from './Redux/userActions'
 
-import Nav from './Components/Nav'
 import Signup from './Components/Signup'
 import Login from './Components/Login'
 import Profile from './Components/Profile'
@@ -48,7 +46,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <div>
         { this.noUser() }
