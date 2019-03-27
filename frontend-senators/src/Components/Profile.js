@@ -10,32 +10,36 @@ class Profile extends Component {
     const token = localStorage.getItem('token')
 
     if (token) {
+      console.log('component did mount', this.props);
       this.props.setAndFetchUser(token)
       this.props.fetchUserSenators(token)
     }
   }
 
-  // mapSenators = () => {
-  //   return this.props.user.senators.map(senator => {
-  //     return <SenatorThumbnail key={ senator.id } senator={ senator }/>
-  //   })
-  // }
+  mapSenators = () => {
+    return this.props.user_senators.senators.map(senator => (
+      <SenatorThumbnail key={ senator.id } senator={ senator }/>)
+    )
+  }
 
   render() {
+          console.log('render', this.props);
     return (
-      <div >
+      <div className='senator-grid'>
       <Nav />
-        { /*this.checkName()*/ }
-        <h1>  my senators </h1>
+        <h1>  my sweet supple senators </h1>
+        {  this.props.user_senators ? this.mapSenators() : null }
       </div>
     )
   }
 }
 
 const mapStateToProps = (state) => {
+
   return {
     user: state.auth.user,
-    user_senators: state.user_senators
+    user_senators: state.user_senators.ratings,
+    senators: state.senators
   }
 }
 

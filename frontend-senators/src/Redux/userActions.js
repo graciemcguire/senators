@@ -28,6 +28,11 @@ export const createRating = ratings => ({
   payload: { ratings }
 })
 
+export const fetchRatings = ratings => ({
+  type: 'FETCH_RATINGS',
+  payload: { ratings }
+})
+
 export const loginFetch = (e) => {
   return fetch("http://localhost:3001/api/v1/login", {
     method: "POST",
@@ -141,6 +146,6 @@ export const fetchUserSenators = (token) => {
       },
     })
     .then(r => r.json())
-    .then(userSenators => console.log('user-senators', userSenators))
+    .then(userSenators => dispatch(fetchRatings(userSenators)))
   }
 }

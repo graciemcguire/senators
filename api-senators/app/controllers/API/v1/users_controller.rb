@@ -11,8 +11,8 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def user_senators
-     @ratings = User.find(current_user.id).ratings.map{|r| RatingSerializer.new(r)}
-    render json: { ratings: @ratings  }, status: :accepted
+    @senators = User.find(current_user.id).senators.map{|r| SenatorSerializer.new(r)}
+    render json: { senators: @senators  }, status: :accepted
   end
 
   def create

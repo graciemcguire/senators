@@ -1,10 +1,12 @@
 class Api::V1::RatingsController < ApplicationController
   def create
-    @rating = Rating.create(rating_params)
-    if @rating.valid?
-      render json: { rating: RatingSerializer.new(@rating) }, status: :created
+    @rating = Rating.find_by(senator_id: params[:senator_id])
+    if @rating
+      @rating.update(rating_params)
+      render json: { rating: @rating }, status: :created
     else
-      render json: { error: 'woopsie' }, status: :not_acceptable
+      @new_rating = Rating.create(rating_params)
+      render json: { rating: RatingSerializer.new(@new_rating) }, status: :created
     end
   end
 

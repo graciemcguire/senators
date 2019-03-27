@@ -12,6 +12,7 @@ import Home from './Components/Home'
 import MainContainer from './Components/MainContainer'
 import SenatorContainer from './Components/SenatorContainer'
 import Logout from './Components/Logout'
+import TestSwipe from './Components/TestSwipe'
 
 class App extends Component {
 
@@ -34,6 +35,7 @@ class App extends Component {
         <Route path='/senators' component={ SenatorContainer }/>
         <Route path='/main' component={ MainContainer }/>
         <Route path='/logout' component={ Logout }/>
+        <Route path='/test' component={ TestSwipe }/>
         <Route path='/*' component={ Home }/>
       </Switch>
     } else {

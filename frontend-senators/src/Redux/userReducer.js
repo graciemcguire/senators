@@ -22,8 +22,9 @@ const userReducer = (state = initialState, action) => {
     case 'CREATE_RATING': {
       return { ...state, user_senators: action.payload }
     }
-
-
+    case 'FETCH_RATINGS': {
+      return { ...state, user_senators: action.payload }
+    }
 
     default:
     return state
