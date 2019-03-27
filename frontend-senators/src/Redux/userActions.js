@@ -112,8 +112,9 @@ export const fetchSenators = (token) => {
   };
 };
 
+
 export const handleCreateRating = (userId, senatorId, wokeOrJoke) => {
-  return dipatch => {
+  return dispatch => {
     fetch('http://localhost:3001/api/v1/ratings', {
       method: 'POST',
       headers: {
@@ -127,9 +128,10 @@ export const handleCreateRating = (userId, senatorId, wokeOrJoke) => {
       })
     })
     .then(r => r.json())
-    .then(console.log)
+    .then(data => dispatch(addUserSenators(data)))
   }
 }
+
 
 export const fetchUserSenators = (token) => {
   return dispatch => {
@@ -140,6 +142,6 @@ export const fetchUserSenators = (token) => {
       },
     })
     .then(r => r.json())
-    .then(console.log)
+    .then(data => console.log('this', data))
   }
 }

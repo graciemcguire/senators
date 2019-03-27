@@ -44,7 +44,8 @@ class Profile extends Component {
 const mapStateToProps = (state) => {
   console.log('state', state);
   return {
-    user: state.auth.user
+    user: state.auth.user,
+    senators: state.senators
   }
 }
 

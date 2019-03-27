@@ -60,29 +60,29 @@
   grid-template-columns: 20% 20% 20% 20% 20% ;
 }
 
-.senator-card-gop {
+.senator-thumbnail-gop {
   justify-content: center;
   border: solid;
   margin: 20px 20px 20px;
   text-align: center;
 }
 
-.senator-card-dem {
+.senator-thumbnail-dem {
   justify-content: center;
   border: solid;
   margin: 20px 20px 20px;
   text-align: center;
 }
 
-.senator-card-gop:hover {
+.senator-thumbnail-gop:hover {
   background-color: #F62A00;
 }
 
-.senator-card-dem:hover {
+.senator-thumbnail-dem:hover {
   background-color: #1E656D;
 }
 
-.thumnail-images {
+.thumbnail-images {
   justify-content: center;
   width: 80%;
   padding-top: 40px;
@@ -112,6 +112,33 @@
 
 .popup-content{
   background-color: #F1F3CE
+}
+
+.senator-card-dem {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: center;
+  border: solid;
+  margin: 20px 20px 20px;
+  text-align: center;
+  background-color: #1E656D;
+  border-color: #F1F3CE
+}
+
+.senator-card-gop {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: center;
+  border: solid;
+  margin: 20px 20px 20px;
+  text-align: center;
+  background-color: #F62A00;
+  border-color: #F1F3CE
+}
+
+.senator-cards {
+  width:500px;
+  height: 500px;
 }
 /* colors =
 navy - #00293C

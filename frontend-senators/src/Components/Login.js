@@ -39,7 +39,7 @@ class Login extends Component {
       <div className='App-header'>
         <img className='logo-small' src= { wokeorjoke_v1 } alt='logo'/>
         <h3>Login!</h3>
-        { localStorage.getItem('token') ? <Redirect to='/main' /> : this.renderLoginForm() }
+        { localStorage.getItem('token') ? <Redirect to='/profile' /> : this.renderLoginForm() }
       </div>
     )
   }

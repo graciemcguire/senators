@@ -6,12 +6,11 @@ import { handleCreateRating } from '../Redux/userActions'
 class SenatorThumbnail extends Component {
 
   render(){
-    console.log(this.props);
     const { senator, user } = this.props
 
     const renderPartyColor = () => {
       return senator.party === 'R' ?
-      'senator-card-gop' : 'senator-card-dem'
+      'senator-thumbnail-gop' : 'senator-thumbnail-dem'
     }
 
     const renderModalPartyColor = () => {
@@ -24,7 +23,7 @@ class SenatorThumbnail extends Component {
         return(
           <div className={ renderPartyColor() }
           onClick>
-            <img className='thumnail-images' src={ senator.image } alt={ senator.name }/>
+            <img className='thumbnail-images' src={ senator.image } alt={ senator.name }/>
             <h2>{ senator.name }</h2>
             <h3>{ senator.party } - { senator.state }</h3>
           </div>

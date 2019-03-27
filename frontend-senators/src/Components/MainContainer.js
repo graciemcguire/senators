@@ -1,30 +1,33 @@
-import React, { Component } from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'react-redux'
-import SenatorThumbnail from './SenatorThumbnail'
+import SenatorCard from './SenatorThumbnail'
 import Nav from './Nav'
 
-class MainContainer extends Component {
+const MainContainer = props => {
 
-
-  render(){
-    console.log('main', this.props);
+    console.log('main', props);
     return(
-      <div>
-        <h1>hi i'm in the main area</h1>
-        <SenatorThumbnail />
+      <Fragment>
+        <Nav />
+        <div className='senator-cards'>
+        { props.senators.senators ?
+          props.senators.senators.map(senator => (
+          <SenatorCard
+          key={ senator.id }
+          senator={ senator }/>
+        )) : console.log(props.senators) }
       </div>
+      </Fragment>
     )
-  }
 }
+
 
 const mapStateToProps = (state) => {
   return {
-    ...state
+    user: state.auth.user,
+    senators: state.senators
   }
 }
-//
-// const mapDispatchToProps = dispatch => {
-//   action: () => dispatch(action())
-// }
 
-export default connect(mapStateToProps)(MainContainer)
+
+export default connect(mapStateToProps)(MainContainer);
