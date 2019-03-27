@@ -41,7 +41,7 @@ class SenatorThumbnail extends Component {
 
     const renderModals = () => {
       return <div className={ renderModalPartyColor() }>
-        <img className='thumnail-images' src={ senator.image } alt={ senator.name }/>
+        <img className='modal-images' src={ senator.image } alt={ senator.name }/>
         <h2>{ senator.name }</h2>
         <h3>{ senator.party } - { senator.state }</h3>
         <h3>Details:</h3>

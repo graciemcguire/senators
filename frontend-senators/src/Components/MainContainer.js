@@ -5,19 +5,31 @@ import Nav from './Nav'
 
 const MainContainer = props => {
 
-    console.log('main', props);
+const renderPage = () => {
+  if(props.senators){
     return(
-      <Fragment>
+      <Fragment className= 'main'>
         <Nav />
         <div className='senator-cards'>
-        { props.senators.senators ?
-          props.senators.senators.map(senator => (
-          <SenatorCard
-          key={ senator.id }
-          senator={ senator }/>
-        )) : console.log(props.senators) }
+          { props.senators.senators ?
+            props.senators.senators.map(senator => (
+            <SenatorCard
+            key={ senator.id }
+            senator={ senator }/>
+          )) : console.log(props.senators) }
       </div>
       </Fragment>
+    )
+  } else {
+    return <center><h1>L O A D I N G . . .</h1></center>
+  }
+}
+
+    console.log('main', props);
+    return(
+      <div>
+      { renderPage() }
+      </div>
     )
 }
 

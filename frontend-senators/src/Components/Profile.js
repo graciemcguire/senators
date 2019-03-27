@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import Logout from './Logout'
 import { Link } from 'react-router-dom'
 import SenatorThumbnail from './SenatorThumbnail'
 import { setAndFetchUser, fetchUserSenators } from '../Redux/userActions'
+import Nav from './Nav'
 
 class Profile extends Component {
 
@@ -32,9 +32,8 @@ class Profile extends Component {
     console.log('profile page:', this.props);
     return (
       <div >
+      <Nav />
         { /*this.checkName()*/ }
-        <Link to='/profile' className='button'>Go rate some senators?</Link>
-        <Logout className='button'/>
         <h1>  senators </h1>
       </div>
     )

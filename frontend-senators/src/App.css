@@ -53,6 +53,10 @@
   width: 600px;
 }
 
+.logo-nav {
+  width: 300px;
+}
+
 .senator-grid {
   background-color: #00293C;
   color: #F1F3CE;
@@ -110,6 +114,12 @@
   border-color: #F1F3CE
 }
 
+.modal-images {
+  justify-content: center;
+  width: 80%;
+  padding-top: 40px;
+}
+
 .popup-content{
   background-color: #F1F3CE
 }
@@ -139,6 +149,31 @@
 .senator-cards {
   width:500px;
   height: 500px;
+}
+
+.main {
+  background-color: #00293C;
+  color: #F1F3CE;
+}
+
+.nav-links {
+  padding: 10px;
+  text-size: 20px;
+  height:100%;
+  justify: right;
+  margin: 10px;
+}
+
+.nav {
+  background-color: #00293C;
+  justify-content: right;
+  align-items: center;
+  height: 40%;
+}
+
+.nav-logo {
+  align-items: center;
+  justify-content: left;
 }
 /* colors =
 navy - #00293C

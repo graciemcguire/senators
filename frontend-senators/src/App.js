@@ -13,6 +13,7 @@ import Profile from './Components/Profile'
 import Home from './Components/Home'
 import MainContainer from './Components/MainContainer'
 import SenatorContainer from './Components/SenatorContainer'
+import Logout from './Components/Logout'
 
 class App extends Component {
 
@@ -34,6 +35,7 @@ class App extends Component {
           <Route path='/signup' component={ Signup }/>
           <Route path='/profile' component={ Profile }/>
           <Route path='/senators' component={ SenatorContainer }/>
+          <Route path='/logout' component={ Logout }/>
           <Route path='/main' component={ MainContainer }/>
           <Route path='/*' component={ Home }/>
         </Switch>
