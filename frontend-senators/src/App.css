@@ -39,6 +39,30 @@
   /* display: inline-block; */
   font-size: 22px;
 }
+
+.button-reverse {
+  margin-top: 20px;
+  background-color: #F1F3CE;
+  color: #00293C;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.button-reverse:hover {
+  margin-top: 20px;
+  color: #F1F3CE;
+  background-color: #00293C;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 22px;
+}
+
 .main-buttons {
   justify-content: center;
   /* margin: 50px; */

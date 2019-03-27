@@ -24,6 +24,9 @@ class SenatorContainer extends Component  {
     this.filterSenators()
   }
 
+  toggle = () => this.setState({ clicked: !this.state.clicked })
+
+  buttonText = () => !this.state.clicked ? 'Woke Senators' : 'Joke Senators'
 
   render(){
     console.log(this.state)
@@ -43,7 +46,10 @@ class SenatorContainer extends Component  {
         <Nav />
       <div className='title'>
         <center><h1>2019 US Senators</h1></center>
-        <center><SearchForm className='btn' changeHandler={ this.changeHandler }/></center>
+        <center>
+        <SearchForm  changeHandler={ this.changeHandler }/>
+        <button className='button-reverse' onClick={ this.toggle }>{ this.buttonText() }</button>
+        </center>
       </div>
 
       <div className= 'senator-grid'>
