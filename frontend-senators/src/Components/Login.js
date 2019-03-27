@@ -17,18 +17,23 @@ class Login extends Component {
       <div>
         <form onSubmit={ this.handleSubmit }>
           <input
+            className='input'
             type="text"
             name="email"
             placeholder="email"
             value={ this.props.email }
           />
           <input
+            className='input'
             type="password"
             name="password"
             placeholder="password"
             value={ this.props.password }
           />
-          <button type='submit'>Login</button>
+        <center>
+        <Link className='button' to={'/signup'}>Sign Up?</Link>
+        <button className='button' type='submit'>Login</button>
+          </center>
         </form>
       </div>
     )
@@ -38,8 +43,7 @@ class Login extends Component {
     return(
       <div className='App-header'>
         <img className='logo-small' src= { wokeorjoke_v1 } alt='logo'/>
-        <h3>Login!</h3>
-        { localStorage.getItem('token') ? <Redirect to='/profile' /> : this.renderLoginForm() }
+        { this.renderLoginForm() }
       </div>
     )
   }

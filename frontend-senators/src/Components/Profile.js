@@ -16,11 +16,6 @@ class Profile extends Component {
       this.props.fetchUserSenators(token)
     }
   }
-  //
-  // checkName = () => {
-  //   return !this.props.user ? null
-  //   : `${ this.props.user.username }`
-  // }
 
   // mapSenators = () => {
   //   return this.props.user.senators.map(senator => {
@@ -34,7 +29,7 @@ class Profile extends Component {
       <div >
       <Nav />
         { /*this.checkName()*/ }
-        <h1>  senators </h1>
+        <h1>  my senators </h1>
       </div>
     )
   }

@@ -13,7 +13,11 @@ class Logout extends Component {
   }
 
   render() {
-    return <button onClick={this.handleLogout}>Logout?</button>
+    return(
+      <div>
+      { this.handleLogout() }
+      </div>
+    )
   }
 }
 

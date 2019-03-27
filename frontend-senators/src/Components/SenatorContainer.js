@@ -8,8 +8,8 @@ const SenatorContainer = props => {
   return(
     <Fragment>
       <Nav />
-    <div>
-      <h1>All senators</h1>
+    <div className='title'>
+      <center><h1>2019 US Senators</h1></center>
     </div>
     <div className= 'senator-grid'>
 

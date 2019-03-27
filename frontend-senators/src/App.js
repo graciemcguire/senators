@@ -26,19 +26,32 @@ class App extends Component {
     }
   }
 
+  noUser = () => {
+    const token = localStorage.getItem('token')
+    if (token) {
+      return <Switch>
+        <Route path='/login' component={ Login }/>
+        <Route path='/signup' component={ Signup }/>
+        <Route path='/profile' component={ Profile }/>
+        <Route path='/senators' component={ SenatorContainer }/>
+        <Route path='/main' component={ MainContainer }/>
+        <Route path='/logout' component={ Logout }/>
+        <Route path='/*' component={ Home }/>
+      </Switch>
+    } else {
+      return <Switch>
+        <Route path='/login' component={ Login }/>
+        <Route path='/signup' component={ Signup }/>
+        <Route path='/*' component={ Home }/>
+      </Switch>
+    }
+  }
+
   render() {
     console.log(this.props);
     return (
       <div>
-        <Switch>
-          <Route path='/login' component={ Login }/>
-          <Route path='/signup' component={ Signup }/>
-          <Route path='/profile' component={ Profile }/>
-          <Route path='/senators' component={ SenatorContainer }/>
-          <Route path='/logout' component={ Logout }/>
-          <Route path='/main' component={ MainContainer }/>
-          <Route path='/*' component={ Home }/>
-        </Switch>
+        { this.noUser() }
       </div>
     );
   }
