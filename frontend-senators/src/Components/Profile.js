@@ -21,14 +21,16 @@ class Profile extends Component {
   }
 
   filteredSenators = () => {
-    if(this.state.searchTerm === '' ) {
-      return this.props.user_senators.senators.map(senator => (
-        <SenatorThumbnail key={ senator.id } senator={ senator }/>))
-    } else {
-      let filtered = this.props.user_senators.senators.filter(senator =>
-      senator.name.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
-      return filtered.map(senator => (
-        <SenatorThumbnail key={ senator.id } senator={ senator }/>))
+    if (this.props.user_senators.senators){
+      if(this.state.searchTerm === '' ) {
+        return this.props.user_senators.senators.map(senator => (
+          <SenatorThumbnail key={ senator.id } senator={ senator }/>))
+      } else {
+        let filtered = this.props.user_senators.senators.filter(senator =>
+        senator.name.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
+        return filtered.map(senator => (
+          <SenatorThumbnail key={ senator.id } senator={ senator }/>))
+      }
     }
   }
 
