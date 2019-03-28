@@ -18,22 +18,20 @@ class TestSwipe extends Component {
     console.log("I was swiped right.");
   }
 
-  onDoubleTap(data) {
-    console.log("I was double tapped.");
-  }
-
   renderCards() {
+    const { senator } = this.props
     console.log(this.props);
-    let data = ["first", "second", "third"];
-    return data.map((d) => {
+    let sen = [this.props.senator]
+     return sen.map((sen) => {
       return(
         <Card
-          key={d}
-          onSwipe={this.onSwipe.bind(this)}
-          onSwipeLeft={this.onSwipeLeft.bind(this)}
-          onSwipeRight={this.onSwipeRight.bind(this)}
-          onDoubleTap={this.onDoubleTap.bind(this)}>
-            Hello World!
+          key={ sen.id }
+          onSwipe={ this.onSwipe.bind(this) }
+          onSwipeLeft={ this.onSwipeLeft.bind(this) }
+          onSwipeRight={ this.onSwipeRight.bind(this)} >
+            <img className='card-image' src={ senator.image } alt={ senator.name }/>
+            <h2>{ senator.name }</h2>
+            <h3>{ senator.party } - { senator.state }</h3>
         </Card>
       );
     });

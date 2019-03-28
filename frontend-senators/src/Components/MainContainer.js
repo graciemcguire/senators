@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux'
-import SenatorCard from './SenatorThumbnail'
+import TestSwipe from './TestSwipe'
 import Nav from './Nav'
 
 const MainContainer = props => {
@@ -14,7 +14,7 @@ const renderPage = () => {
         <div className='senator-cards'>
           { props.senators.senators ?
             props.senators.senators.map(senator => (
-            <SenatorCard
+            <TestSwipe
             key={ senator.id }
             senator={ senator }/>
           )) : console.log(props.senators) }

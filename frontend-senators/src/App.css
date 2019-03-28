@@ -221,6 +221,11 @@
   height: 30px;
 }
 
+.card-image {
+  width: 80%;
+  justify-content: center;
+}
+
 /* colors =
 navy - #00293C
 blue - #1E656D

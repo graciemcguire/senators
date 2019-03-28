@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Popup from "reactjs-popup";
+import { Card, CardWrapper } from 'react-swipeable-cards';
 import { handleCreateRating } from '../Redux/userActions'
-
 
 class SenatorCard extends Component {
 
