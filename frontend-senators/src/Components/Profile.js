@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux'
 import SenatorThumbnail from './SenatorThumbnail'
 import { setAndFetchUser, fetchUserSenators } from '../Redux/userActions'
 import Nav from './Nav'
+import SearchForm from './SearchForm'
 
 class Profile extends Component {
 
@@ -17,19 +18,53 @@ class Profile extends Component {
   }
 
   mapSenators = () => {
-    return this.props.user_senators.senators.map(senator => (
+    return this.props.senators.senators ? this.props.user_senators.senators.map(senator => (
       <SenatorThumbnail key={ senator.id } senator={ senator }/>)
     )
+    : null
   }
 
+  state = {
+    searchTerm: '',
+    clicked: false
+  }
+
+  filterSenators = () => {
+    return this.props.senators.senators ?
+      this.props.senators.senators.filter(senator =>
+      senator.name.toLowerCase().includes(this.state.searchTerm.toLowerCase())) : console.log('no')
+  }
+
+  changeHandler = event => {
+    this.setState({
+      searchTerm: event.target.value
+    })
+    this.filterSenators()
+  }
+
+  toggle = () => this.setState({ clicked: !this.state.clicked })
+
+  buttonText = () => !this.state.clicked ? 'Viewing Woke Senators' : 'Viewing Joke Senators'
+
   render() {
-          console.log('render', this.props);
+
+  const { user_senators } = this.props
+
     return (
-      <div className='senator-grid'>
-      <Nav />
-        <h1>  my sweet supple senators </h1>
-        {  this.props.user_senators ? this.mapSenators() : null }
+      <Fragment>
+        <Nav />
+      <div className='title'>
+        <center><h1>My Rated Senators</h1></center>
+        <center>
+          <SearchForm  changeHandler={ this.changeHandler }/>
+          <button className='button-reverse' onClick={ this.toggle }>{ this.buttonText() }</button>
+        </center>
       </div>
+
+      <div className= 'senator-grid'>
+        { user_senators ? this.mapSenators() : null }
+        </div>
+      </Fragment>
     )
   }
 }

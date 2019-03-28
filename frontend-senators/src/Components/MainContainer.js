@@ -8,7 +8,8 @@ const MainContainer = props => {
 const renderPage = () => {
   if(props.senators){
     return(
-      <Fragment className= 'main'>
+      <Fragment>
+      <div className='main'>
         <Nav />
         <div className='senator-cards'>
           { props.senators.senators ?
@@ -17,6 +18,7 @@ const renderPage = () => {
             key={ senator.id }
             senator={ senator }/>
           )) : console.log(props.senators) }
+        </div>
       </div>
       </Fragment>
     )

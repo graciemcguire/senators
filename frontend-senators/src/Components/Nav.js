@@ -28,8 +28,8 @@ class Nav extends Component {
     <Fragment>
       <div className='nav'>
         <img className='logo-nav nav-logo' src= { wokeorjoke_v1 } alt='logo'/>
+        <Link className='button nav-links' to={'/main'}>Rate Senators</Link>
         <Link className='button nav-links' to={'/senators'}>All Senators</Link>
-        <Link className='button nav-links' to={'/main'}>Swipe?</Link>
         { profileLink() }
       </div>
     </Fragment>

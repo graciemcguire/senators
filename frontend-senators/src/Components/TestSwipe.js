@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import { Card, CardWrapper } from 'react-swipeable-cards';
+import { handleCreateRating } from '../Redux/userActions'
+import { connect } from 'react-redux';
 
 class TestSwipe extends Component {
 
@@ -21,6 +23,7 @@ class TestSwipe extends Component {
   }
 
   renderCards() {
+    console.log(this.props);
     let data = ["first", "second", "third"];
     return data.map((d) => {
       return(
@@ -45,4 +48,16 @@ class TestSwipe extends Component {
   }
 }
 
-export default TestSwipe;
+const mapStateToProps = (state) => {
+  return {
+    user: state.auth.user
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    handleCreateRating: (userId, senatorId, wokeOrJoke) => dispatch(handleCreateRating(userId, senatorId, wokeOrJoke))
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TestSwipe);

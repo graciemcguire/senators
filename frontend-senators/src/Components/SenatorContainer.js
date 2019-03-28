@@ -35,10 +35,10 @@ class SenatorContainer extends Component  {
     const renderSenators = () => {
       return senators.senators ?
         senators.senators.map(senator => (
-        <SenatorThumbnail
-        key={ senator.id }
-        senator={ senator }/>
-      )) : console.log(senators)
+          <SenatorThumbnail
+          key={ senator.id }
+          senator={ senator }/>
+        )) : console.log(senators)
     }
 
     return(
@@ -53,7 +53,12 @@ class SenatorContainer extends Component  {
       </div>
 
       <div className= 'senator-grid'>
-        { renderSenators() }
+        { senators.senators ?
+          senators.senators.map(senator => (
+          <SenatorThumbnail
+          key={ senator.id }
+          senator={ senator }/>
+        )) : console.log(senators) }
       </div>
       </Fragment>
     )
