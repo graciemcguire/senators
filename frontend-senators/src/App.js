@@ -29,20 +29,20 @@ class App extends Component {
     const token = localStorage.getItem('token')
     if (token) {
       return <Switch>
+        <Route path='/profile' component={ Profile }/>
         <Route path='/login' component={ Login }/>
         <Route path='/signup' component={ Signup }/>
-        <Route path='/profile' component={ Profile }/>
         <Route path='/senators' component={ SenatorContainer }/>
         <Route path='/main' component={ MainContainer }/>
         <Route path='/logout' component={ Logout }/>
         <Route path='/test' component={ TestSwipe }/>
-        <Route path='/*' component={ Home }/>
+        <Route path='/' component={ Home }/>
       </Switch>
     } else {
       return <Switch>
         <Route path='/login' component={ Login }/>
         <Route path='/signup' component={ Signup }/>
-        <Route path='/*' component={ Home }/>
+        <Route path='/' component={ Home }/>
       </Switch>
     }
   }

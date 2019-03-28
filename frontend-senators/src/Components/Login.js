@@ -2,14 +2,21 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { loginAndFetch } from '../Redux/userActions'
 import { withRouter, Link } from 'react-router-dom'
+import { Redirect } from 'react-router'
 import wokeorjoke_v1 from '../wokeorjoke_v1.svg'
 
 class Login extends Component {
+  state = {
+    loaded: false
+  }
 
   handleSubmit = (e) => {
     e.preventDefault()
     this.props.loginAndFetch(e, this.props.history)
     this.props.history.push('/profile')
+    this.setState({
+      loaded: true
+    })
   }
 
   renderLoginForm = () => {
@@ -43,7 +50,8 @@ class Login extends Component {
     return(
       <div className='App-header'>
         <img className='logo-small' src= { wokeorjoke_v1 } alt='logo'/>
-        { this.renderLoginForm() }
+
+        { !!this.state.loaded ? <Redirect to='/profile'/> : this.renderLoginForm() }
       </div>
     )
   }
