@@ -518,7 +518,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://pbs.twimg.com/profile_images/1213023547/Twitter_2_400x400.jpg'
     },
     { name: 'Doug Jones',
      state: 'AL',
@@ -529,7 +529,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://i0.wp.com/greenecodemocrat.com/wp-content/uploads/2017/11/1200px-doug_jones_flag.jpeg?resize=562%2C597&ssl=1'
     },
     { name: 'Tim Kaine',
      state: 'VA',
@@ -540,7 +540,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://blackeconomicalliance.org/app/uploads/2018/08/Senator-Tim-Kaine-800x800.jpg'
     },
     { name: 'John Kennedy',
      state: 'LA',
@@ -551,7 +551,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://pbs.twimg.com/profile_images/831592195320840192/GXfc24bb_400x400.jpg'
     },
     { name: 'Angus King Jr.',
      state: 'ME',
@@ -562,7 +562,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://pbs.twimg.com/profile_images/378800000406004520/c5e846a94969202654cf1ac5fafc3659_400x400.jpeg'
     },
     { name: 'Amy Klobuchar',
      state: 'MN',
@@ -573,7 +573,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'http://knsiradio.com/application/files/5415/4989/5797/Amy_Klobuchar.jpg'
     },
     { name: 'James Lankford',
      state: 'OK',
@@ -584,7 +584,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://upload.wikimedia.org/wikipedia/commons/1/1b/James_Lankford%2C_Official_Portrait%2C_112th_Congress.jpg'
     },
     { name: 'Patrick Leahy',
      state: 'VT',
@@ -595,7 +595,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://www.oceanchampions.org/wp-content/uploads/2015/07/patrick.leahy_.jpg'
     },
     { name: 'Mike Lee',
      state: 'UT',
@@ -606,7 +606,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://pbs.twimg.com/profile_images/378800000680617902/5c3f55ed6c09f8e7ed0da662d944b8dc.jpeg'
     },
     { name: 'Joe Manchin III',
      state: 'WV',
@@ -617,7 +617,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://pixel.nymag.com/imgs/daily/intelligencer/2018/10/08/8-manchin.w700.h700.jpg'
     },
     { name: 'Edward Markey',
      state: 'MA',
@@ -628,7 +628,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://votesmart.org/canphoto/26900_lg.jpg'
     },
     { name: 'Mitch McConnell',
      state: 'KY',
@@ -639,7 +639,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://www.biography.com/.image/t_share/MTQzMzQ5Mjg4NTY5Njc3Mzgz/mitch-mcconnell-official-senate-portrait_1600jpg.jpg'
     },
     { name: 'Martha McSally',
      state: 'AZ',
@@ -650,7 +650,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://media2.fdncms.com/tucsonweekly/imager/u/original/23139287/5be31019b37e1.image.jpg'
     },
     { name: 'Robert Menendez',
      state: 'NJ',
@@ -672,7 +672,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://yt3.ggpht.com/a-/AAuE7mCCINew5l51ZhMCGSsavEvGwQiH-FHI-QcyuQ=s900-mo-c-c0xffffffff-rj-k-no'
     },
     { name: 'Jerry Moran',
      state: 'KS',
@@ -683,7 +683,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://www.moran.senate.gov/public/?a=Files.Serve&File_id=7E1128DE-E5AA-4892-A949-DF3349A2CD09'
     },
     { name: 'Lisa Murkowski',
      state: 'AK',
@@ -694,7 +694,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://upload.wikimedia.org/wikipedia/commons/d/d6/Lisa_Murkowski.jpg'
     },
     { name: 'Christopher Murphy',
      state: 'CT',
@@ -705,7 +705,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'http://scribblers.us/tj/wp-content/uploads/2014/10/Chris_Murphy_official_photo.jpg'
     },
     { name: 'Patty Murray',
      state: 'WA',
@@ -716,7 +716,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://www.sos.wa.gov/legacy/women-in-government/patty-murray/main.jpg'
     },
     { name: 'Rand Paul',
      state: 'KY',
@@ -727,7 +727,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://pbs.twimg.com/profile_images/681152691461042177/_PrgDgFA_400x400.jpg'
     },
     { name: 'David Perdue',
      state: 'GA',
@@ -738,7 +738,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://pbs.twimg.com/profile_images/821843329008680967/zqpECZrD_400x400.jpg'
     },
     { name: 'Gary Peters',
      state: 'MI',
@@ -749,7 +749,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'http://mediad.publicbroadcasting.net/p/wemu/files/styles/x_large/public/201902/Peters_Gary_official_portrait.jpg'
     },
     { name: 'Rob Portman',
      state: 'OH',
@@ -760,7 +760,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://www.oceanchampions.org/wp-content/uploads/2015/07/rob.portman.jpg'
     },
     { name: 'Jack Reed',
      state: 'RI',
@@ -771,7 +771,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://www.reed.senate.gov/imo/media/image/contact-jack.jpg'
     },
     { name: 'James Risch',
      state: 'ID',
@@ -782,7 +782,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://pbs.twimg.com/profile_images/3161364149/32f2f83385840438a393070a7e426bde_400x400.jpeg'
     },
     { name: 'Pat Roberts',
      state: 'KS',
@@ -793,7 +793,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://pbs.twimg.com/profile_images/981951337536671744/8z6P2Eck_400x400.jpg'
     },
     { name: 'Mitt Romney',
      state: 'UT',
@@ -804,7 +804,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://pixel.nymag.com/imgs/daily/intelligencer/2018/02/16/16-romney-utah.w700.h700.jpg'
     },
     { name: 'Jacky Rosen',
      state: 'NV',
@@ -815,7 +815,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://pbs.twimg.com/profile_images/988891773349982208/LL_DHO23_400x400.jpg'
     },
     { name: 'Mike Rounds',
      state: 'SD',
@@ -826,7 +826,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://radiocms-images.us1.eldarioncloud.com/resize/750/https://storage.googleapis.com/media.mwcradio.com/mimesis/2017-05/16/mike_rounds.jpg'
     },
     { name: 'Marco Rubio',
      state: 'FL',
@@ -837,7 +837,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'http://floridapolitics.com/wp-content/uploads/2017/11/ct-marco-rubio-donald-trump.jpg'
     },
     { name: 'Bernard Sanders',
      state: 'VT',
@@ -848,7 +848,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bernie_Sanders.jpg'
     },
     { name: 'Ben Sasse',
      state: 'NE',
@@ -859,7 +859,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://cdn.britannica.com/96/183096-004-9387ABDD.jpg'
     },
     { name: 'Brian Schatz',
      state: 'HI',
@@ -870,7 +870,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://upload.wikimedia.org/wikipedia/commons/d/d0/Brian_Schatz_official_portrait.jpg'
     },
     { name: 'Charles Schumer',
      state: 'NY',
@@ -881,7 +881,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://hollandsheroes.files.wordpress.com/2015/07/chuckschumer.jpg'
     },
     { name: 'Tim Scott',
      state: 'SC',
@@ -892,7 +892,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Tim_Scott%2C_official_portrait%2C_113th_Congress.jpg/1200px-Tim_Scott%2C_official_portrait%2C_113th_Congress.jpg'
     },
     { name: 'Rick Scott',
      state: 'FL',
@@ -903,7 +903,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://www.jurist.org/news/wp-content/uploads/sites/4/2014/06/Governor-Rick-Scott.jpg'
     },
     { name: 'Jeanne Shaheen',
      state: 'NH',
@@ -914,7 +914,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://www.nhpr.org/sites/nhpr/files/styles/medium/public/201902/jeanne_shaheen__official_senate_portrait_cropped.jpg'
     },
     { name: 'Richard Shelby',
      state: 'AL',
@@ -925,7 +925,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://cdn.britannica.com/56/132856-004-B1BA95C5.jpg'
     },
     { name: 'Kyrsten Sinema',
      state: 'AZ',
@@ -936,7 +936,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://qvoicenews.com/wp-content/uploads/2018/11/Kyrsten-Sinema.jpg'
     },
     { name: 'Tina Smith',
      state: 'MN',
@@ -947,7 +947,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://img.apmcdn.org/c35c2de9821f98300dfcaa7e1203671076df495e/normal/bb776c-20180215-sen-tina-smith.jpg'
     },
     { name: 'Debbier Stabenow',
      state: 'MI',
@@ -958,7 +958,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://pbs.twimg.com/profile_images/735149032096604161/co-FGACV_400x400.jpg'
     },
     { name: 'Dan Sullivan',
      state: 'AK',
@@ -969,7 +969,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://www.talkeetnachamber.org/wp-content/uploads/2017/10/senator-dan-sullivan.jpg'
     },
     { name: 'Jon Tester',
      state: 'MT',
@@ -980,7 +980,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'http://mediad.publicbroadcasting.net/p/kufm/files/styles/x_large/public/201407/Jon_Tester.jpg'
     },
     { name: 'John Thune',
      state: 'SD',
@@ -991,7 +991,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'http://mediad.publicbroadcasting.net/p/sdpb/files/styles/medium/public/201804/john_thune_credit_wnax_dot_com.jpg'
     },
     { name: 'Thom Tillis',
      state: 'NC',
@@ -1002,7 +1002,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://www.tillis.senate.gov/public/vendor/_skins/default/images/facebook_tillis.jpg'
     },
     { name: 'Patrick Toomey',
      state: 'PA',
@@ -1013,7 +1013,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://upload.wikimedia.org/wikipedia/commons/b/b8/Pat_Toomey_Congress.jpg'
     },
     { name: 'Tom Udall',
      state: 'NM',
@@ -1024,7 +1024,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://pbs.twimg.com/profile_images/847475846944182272/HKMEaecM_400x400.jpg'
     },
     { name: 'Chris Van Hollen',
      state: 'MD',
@@ -1035,7 +1035,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://pbs.twimg.com/profile_images/943708990449618944/0XSZE4Et_400x400.jpg'
     },
     { name: 'Mark Warner',
      state: 'VA',
@@ -1046,7 +1046,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://pbs.twimg.com/profile_images/944243549922582528/DyFwGriJ_400x400.jpg'
     },
     { name: 'Elizabeth Warren',
      state: 'MA',
@@ -1057,7 +1057,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Elizabeth_Warren%2C_official_portrait%2C_114th_Congress_%28cropped%29%282%29.jpg/1200px-Elizabeth_Warren%2C_official_portrait%2C_114th_Congress_%28cropped%29%282%29.jpg'
     },
     { name: 'Sheldon Whitehouse',
      state: 'RI',
@@ -1068,7 +1068,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://www.oceanchampions.org/wp-content/uploads/2015/07/sheldon.whitehouse.jpg'
     },
     { name: 'Roger Wicker',
      state: 'MS',
@@ -1079,7 +1079,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://upload.wikimedia.org/wikipedia/commons/6/63/U.S._Senator_Roger_F._Wicker_Official_Portrait%2C_2018.jpg'
     },
     { name: 'Ron Wyden',
      state: 'OR',
@@ -1090,7 +1090,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://youthtoday.org/wp-content/uploads/sites/13/2016/07/Ron_Wyden_official_portrait_crop.jpg'
     },
     { name: 'Todd Young',
      state: 'IN',
@@ -1101,7 +1101,7 @@ senators = Senator.create(
      nra_rating: '0',
      trump_rating: '0',
      contact: '',
-     image: ''
+     image: 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Senator_Todd_Young_official_portrait.jpg'
     }
   ]
 )
