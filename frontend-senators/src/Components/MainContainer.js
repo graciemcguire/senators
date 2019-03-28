@@ -43,7 +43,7 @@ class MainContainer extends Component {
 
 
 
-    let senators = this.props.senators.senators ? this.props.senators.senators.sort( () => Math.random() - 0.5) : null
+    let senators = this.props.senators.senators 
 
 
     if(senators){
