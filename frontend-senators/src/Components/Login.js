@@ -13,7 +13,7 @@ class Login extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     this.props.loginAndFetch(e, this.props.history)
-    this.props.history.push('/profile')
+    this.props.history.push('/main')
     this.setState({
       loaded: true
     })
@@ -51,7 +51,7 @@ class Login extends Component {
       <div className='App-header'>
         <img className='logo-small' src= { wokeorjoke_v1 } alt='logo'/>
 
-        { !!this.state.loaded ? <Redirect to='/profile'/> : this.renderLoginForm() }
+        { this.state.loaded ? <Redirect to='/main'/> : this.renderLoginForm() }
       </div>
     )
   }

@@ -6,41 +6,43 @@ import Nav from './Nav'
 import SearchForm from './SearchForm'
 
 class Profile extends Component {
-
-  componentDidMount () {
-    const token = localStorage.getItem('token')
-
-    if (token) {
-      console.log('component did mount', this.props);
-      this.props.setAndFetchUser(token)
-      this.props.fetchUserSenators(token)
-    }
-  }
-
-  mapSenators = () => {
-    return this.props.senators.senators ? this.props.user_senators.senators.map(senator => (
-      <SenatorThumbnail key={ senator.id } senator={ senator }/>)
-    )
-    : null
-  }
-
   state = {
     searchTerm: '',
     clicked: false
   }
 
-  filterSenators = () => {
-    return this.props.senators.senators ?
-      this.props.senators.senators.filter(senator =>
-      senator.name.toLowerCase().includes(this.state.searchTerm.toLowerCase())) : console.log('no')
+  componentDidMount () {
+    const token = localStorage.getItem('token')
+
+    if (token) {
+      this.props.setAndFetchUser(token)
+      this.props.fetchUserSenators(token)
+    }
   }
+
+  filterSenators = () => {
+    return this.props.user_senators.senators.filter(senator =>
+      senator.name.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
+  }
+
+  mapSenators = () => {
+    console.log(this.props.user_senators);
+    return this.props.user_senators.senators ? this.props.user_senators.senators.map(senator => (
+      <SenatorThumbnail key={ senator.id } senator={ senator }/>)
+    )
+    : null
+  }
+
 
   changeHandler = event => {
     this.setState({
       searchTerm: event.target.value
     })
-    this.filterSenators()
   }
+
+  // toggleSenators = () => {
+  //
+  // }
 
   toggle = () => this.setState({ clicked: !this.state.clicked })
 
@@ -62,7 +64,7 @@ class Profile extends Component {
       </div>
 
       <div className= 'senator-grid'>
-        { user_senators ? this.mapSenators() : null }
+        { user_senators ? this.mapSenators() : <center><h1>L O A D I N G . . .</h1></center> }
         </div>
       </Fragment>
     )
@@ -73,8 +75,7 @@ const mapStateToProps = (state) => {
 
   return {
     user: state.auth.user,
-    user_senators: state.user_senators.ratings,
-    senators: state.senators
+    user_senators: state.user_senators.ratings
   }
 }
 
