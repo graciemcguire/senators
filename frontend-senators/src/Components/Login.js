@@ -13,7 +13,6 @@ class Login extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     this.props.loginAndFetch(e, this.props.history)
-    this.props.history.push('/main')
     this.setState({
       loaded: true
     })

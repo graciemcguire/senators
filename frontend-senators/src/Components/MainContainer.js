@@ -10,18 +10,15 @@ class MainContainer extends Component {
     message: 'S W I P E !'
   }
 
-  onSwipe(senator) {
-    console.log(senator + " was swiped.")
-  }
 
-  onSwipeLeft(senator) {
+  onSwipeLeft = (senator) => {
     console.log(senator, "I was swiped left.")
     this.setState({
 			message: 'J O K E !'
 		});
   }
 
-  onSwipeRight(senator) {
+  onSwipeRight = (senator) => {
     console.log(senator, "I was swiped right.");
     this.setState({
 			message: 'W O K E !'
@@ -50,9 +47,8 @@ class MainContainer extends Component {
             style={{ backgroundColor: '#F1F3CE' }}
             key={ senator.id }
             senator={ senator }
-            onSwipe={ (e) => this.onSwipe(this, e) }
-            onSwipeLeft={ this.onSwipeLeft.bind(this) }
-            onSwipeRight={ this.onSwipeRight.bind(this)}
+            onSwipeLeft={ ()=> this.onSwipeLeft(senator) }
+            onSwipeRight={()=> this.onSwipeRight(senator)}
           >
           <div style={ titleStyle }>
             <img className='card-image' src={ senator.image } alt={ senator.name }/>

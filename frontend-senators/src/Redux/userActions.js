@@ -53,9 +53,9 @@ export const loginAndFetch = (e, history) => {
   return (dispatch) => {
     return loginFetch(e)
     .then(json => {
-      history.push('/profile')
       dispatch(handleLogin(json.user));
       localStorage.setItem("token", json.jwt);
+      history.push('/main')
     })
   }
 }
