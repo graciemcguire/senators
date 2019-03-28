@@ -7,8 +7,7 @@ import SearchForm from './SearchForm'
 class SenatorContainer extends Component  {
 
   state = {
-    searchTerm: '',
-    clicked: false
+    searchTerm: ''
   }
 
   filterSenators = () => {
@@ -24,9 +23,6 @@ class SenatorContainer extends Component  {
     this.filterSenators()
   }
 
-  toggle = () => this.setState({ clicked: !this.state.clicked })
-
-  buttonText = () => !this.state.clicked ? 'Woke Senators' : 'Joke Senators'
 
   render(){
     console.log(this.state)
@@ -47,8 +43,7 @@ class SenatorContainer extends Component  {
       <div className='title'>
         <center><h1>2019 US Senators</h1></center>
         <center>
-        <SearchForm  changeHandler={ this.changeHandler }/>
-        <button className='button-reverse' onClick={ this.toggle }>{ this.buttonText() }</button>
+          <SearchForm  changeHandler={ this.changeHandler }/>
         </center>
       </div>
 

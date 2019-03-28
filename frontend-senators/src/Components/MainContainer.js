@@ -6,14 +6,28 @@ import Nav from './Nav'
 import { Card, CardWrapper } from 'react-swipeable-cards';
 
 class MainContainer extends Component {
-
-  onSwipeLeft = (sen) => {
-    console.log("I was swiped left.");
+  state = {
+    message: 'S W I P E !'
   }
 
-  onSwipeRight = (sen) => {
-    console.log("I was swiped right.", this.props);
+  onSwipe(senator) {
+    console.log(senator + " was swiped.")
   }
+
+  onSwipeLeft(senator) {
+    console.log(senator, "I was swiped left.")
+    this.setState({
+			message: 'J O K E !'
+		});
+  }
+
+  onSwipeRight(senator) {
+    console.log(senator, "I was swiped right.");
+    this.setState({
+			message: 'W O K E !'
+		});
+  }
+
 
   renderPage = () => {
     console.log(this.props.senators.senators);
@@ -27,53 +41,62 @@ class MainContainer extends Component {
       display: 'inline-block'
 		};
 
-    if(this.props.senators.senators){
-      return(
-        <Fragment>
-          <Nav />
-          <div>
-            <div style={ this.containerStyle }>
-              <CardWrapper style={ this.wrapperStyle }>
-              { this.props.senators.senators ?
-                this.props.senators.senators.map(senator => (
-                <Card
-                key={ senator.id }
-                senator={ senator }
-                onSwipeLeft={ this.onSwipeLeft.bind(this) }
-                onSwipeRight={ this.onSwipeRight.bind(this)}
-                >
-              <div style={ titleStyle }>
-                <img className='card-image' src={ senator.image } alt={ senator.name }/>
-                <h2>{ senator.name }</h2>
-                <h3>{ senator.party } - { senator.state }</h3>
-              </div>
-                </Card>
-              )) : console.log(this.props.senators) }
-              </CardWrapper>
-            </div>
+    const senators = this.props.senators.senators
+
+    if(senators){
+      return senators.map(senator => {
+        return(
+          <Card
+            style={{ backgroundColor: '#F1F3CE' }}
+            key={ senator.id }
+            senator={ senator }
+            onSwipe={ (e) => this.onSwipe(this, e) }
+            onSwipeLeft={ this.onSwipeLeft.bind(this) }
+            onSwipeRight={ this.onSwipeRight.bind(this)}
+          >
+          <div style={ titleStyle }>
+            <img className='card-image' src={ senator.image } alt={ senator.name }/>
+            <h2>{ senator.name }</h2>
+            <h3>{ senator.party } - { senator.state }</h3>
           </div>
-        </Fragment>
+        </Card>
       )
-    } else {
+    })} else {
       return <center><h1>L O A D I N G . . .</h1></center>
     }
   }
   render(){
 
     let wrapperStyle = {
-      backgroundColor: "#024773",
+      backgroundColor: "#00293C",
       height: "80vh"
     };
 
     let containerStyle = {
-      backgroundColor: "green",
+      backgroundColor: "00293C",
       height: "calc(100vh - 16px)"
     }
 
+    let messageStyle = {
+      color: "white",
+      textAlign: "center",
+      fontWeight: "bold",
+      fontSize: "2vw",
+      fontFamily: "Sans-Serif",
+      color: "#F1F3CE"
+    }
+
+
     return(
-      <div>
-      { this.renderPage() }
-      </div>
+      <Fragment>
+        <Nav />
+        <div style={ containerStyle }>
+          <CardWrapper style={ wrapperStyle }>
+            { this.renderPage() }
+          </ CardWrapper>
+          <div style={ messageStyle }>{ this.state.message }</div>
+        </div>
+      </Fragment>
     )
   }
 }
@@ -82,7 +105,7 @@ const mapStateToProps = (state) => {
   return {
     user: state.auth.user,
     senators: state.senators,
-    user_senators: state.user_senators
+    user_senators: state.user_senators.ratings
   }
 }
 
