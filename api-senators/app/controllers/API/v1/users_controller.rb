@@ -25,12 +25,12 @@ class Api::V1::UsersController < ApplicationController
     end
   end
 
-  def update
-    @user = User.find(params[:id])
-    @senator = Senator.find(params[:senator_id])
-    @user.senators << @senator
-    render json: @user.senators
-  end
+  # def update
+  #   @user = User.find(params[:id])
+  #   @senator = Senator.find(params[:senator_id])
+  #   @user.senators << @senator
+  #   render json: @user.senators
+  # end
 
   def destroy
     @user = User.find(params[:id])

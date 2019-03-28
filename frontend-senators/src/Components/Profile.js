@@ -20,17 +20,16 @@ class Profile extends Component {
     }
   }
 
-  filterSenators = () => {
-    return this.props.user_senators.senators.filter(senator =>
+  filteredSenators = () => {
+    if(this.state.searchTerm === '' ) {
+      return this.props.user_senators.senators.map(senator => (
+        <SenatorThumbnail key={ senator.id } senator={ senator }/>))
+    } else {
+      let filtered = this.props.user_senators.senators.filter(senator =>
       senator.name.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
-  }
-
-  mapSenators = () => {
-    console.log(this.props.user_senators);
-    return this.props.user_senators.senators ? this.props.user_senators.senators.map(senator => (
-      <SenatorThumbnail key={ senator.id } senator={ senator }/>)
-    )
-    : null
+      return filtered.map(senator => (
+        <SenatorThumbnail key={ senator.id } senator={ senator }/>))
+    }
   }
 
 
@@ -38,13 +37,14 @@ class Profile extends Component {
     this.setState({
       searchTerm: event.target.value
     })
+    this.filteredSenators()
   }
 
-  // toggleSenators = () => {
-  //
-  // }
+  toggleSenators = () => {
+    console.log('clicked:', this.state.clicked)
+    this.setState({ clicked: !this.state.clicked })
 
-  toggle = () => this.setState({ clicked: !this.state.clicked })
+  }
 
   buttonText = () => !this.state.clicked ? 'Viewing Woke Senators' : 'Viewing Joke Senators'
 
@@ -59,12 +59,12 @@ class Profile extends Component {
         <center><h1>My Rated Senators</h1></center>
         <center>
           <SearchForm  changeHandler={ this.changeHandler }/>
-          <button className='button-reverse' onClick={ this.toggle }>{ this.buttonText() }</button>
+          <button className='button-reverse' onClick={ this.toggleSenators }>{ this.buttonText() }</button>
         </center>
       </div>
 
       <div className= 'senator-grid'>
-        { user_senators ? this.mapSenators() : <center><h1>L O A D I N G . . .</h1></center> }
+        { user_senators ? this.filteredSenators() : <center><h1>L O A D I N G . . .</h1></center> }
         </div>
       </Fragment>
     )

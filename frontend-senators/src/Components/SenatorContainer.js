@@ -10,32 +10,34 @@ class SenatorContainer extends Component  {
     searchTerm: ''
   }
 
-  filterSenators = () => {
-    return this.props.senators.senators ?
-      this.props.senators.senators.filter(senator =>
-      senator.name.toLowerCase().includes(this.state.searchTerm.toLowerCase())) : console.log('no')
+  filteredSenators = () => {
+    if(this.state.searchTerm === '' ) {
+      return this.props.senators.senators.map(senator => (
+        <SenatorThumbnail key={ senator.id } senator={ senator }/>))
+    } else {
+      let filtered = this.props.senators.senators.filter(senator =>
+      senator.name.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
+      return filtered.map(senator => (
+        <SenatorThumbnail key={ senator.id } senator={ senator }/>))
+    }
   }
 
   changeHandler = event => {
     this.setState({
       searchTerm: event.target.value
     })
-    this.filterSenators()
+    this.filteredSenators()
   }
 
+  toggleSenators = () => {
+    console.log('clicked:', this.state.clicked)
+    this.setState({ clicked: !this.state.clicked })
+
+  }
 
   render(){
     console.log(this.state)
     const { senators } = this.props
-
-    const renderSenators = () => {
-      return senators.senators ?
-        senators.senators.map(senator => (
-          <SenatorThumbnail
-          key={ senator.id }
-          senator={ senator }/>
-        )) : console.log(senators)
-    }
 
     return(
       <Fragment>
@@ -49,11 +51,7 @@ class SenatorContainer extends Component  {
 
       <div className= 'senator-grid'>
         { senators.senators ?
-          senators.senators.map(senator => (
-          <SenatorThumbnail
-          key={ senator.id }
-          senator={ senator }/>
-        )) : console.log(senators) }
+          this.filteredSenators() : console.log(senators) }
       </div>
       </Fragment>
     )

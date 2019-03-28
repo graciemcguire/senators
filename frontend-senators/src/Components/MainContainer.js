@@ -11,8 +11,10 @@ class MainContainer extends Component {
   }
 
 
+
   onSwipeLeft = (senator) => {
     console.log(senator, "I was swiped left.")
+    this.props.handleCreateRating(this.props.user.id, senator, 'joke')
     this.setState({
 			message: 'J O K E !'
 		});
@@ -20,6 +22,7 @@ class MainContainer extends Component {
 
   onSwipeRight = (senator) => {
     console.log(senator, "I was swiped right.");
+    this.props.handleCreateRating(this.props.user.id, senator.id, 'woke')
     this.setState({
 			message: 'W O K E !'
 		});
@@ -38,7 +41,10 @@ class MainContainer extends Component {
       display: 'inline-block'
 		};
 
-    const senators = this.props.senators.senators
+
+
+    let senators = this.props.senators.senators ? this.props.senators.senators.sort( () => Math.random() - 0.5) : null
+
 
     if(senators){
       return senators.map(senator => {
