@@ -34,7 +34,7 @@ export const fetchRatings = ratings => ({
 })
 
 export const loginFetch = (e) => {
-  return fetch("https://woke-or-joke-api.herokuapp.com/api/v1/login", {
+  return fetch("http://localhost:3001/api/v1/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -64,14 +64,14 @@ export const signUpAndFetch = (e, history) => {
   return (dispatch) => {
     return signUpFetch(e)
     .then(json => {
+      history.push('/profile')
       dispatch(handleLogin(json.user)); localStorage.setItem("token", json.jwt)
-      history.push('/main')
     })
   }
 }
 
 export const signUpFetch = (e) => {
-  return fetch("https://woke-or-joke-api.herokuapp.com/api/v1/users", {
+  return fetch("http://localhost:3001/api/v1/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -94,7 +94,7 @@ export const setAndFetchUser = (token) => {
 }
 
 export const fetchingCurrentUser = (token) => {
-  return fetch('https://woke-or-joke-api.herokuapp.com/api/v1/current_user', {
+  return fetch('http://localhost:3001/api/v1/current_user', {
     headers: {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${token}`
@@ -106,7 +106,7 @@ export const fetchingCurrentUser = (token) => {
 
 export const fetchSenators = (token) => {
   return dispatch => {
-    fetch('https://woke-or-joke-api.herokuapp.com/api/v1/senators', {
+    fetch('http://localhost:3001/api/v1/senators', {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${token}`
@@ -120,7 +120,7 @@ export const fetchSenators = (token) => {
 
 export const handleCreateRating = (userId, senatorId, wokeOrJoke) => {
   return dispatch => {
-    fetch('https://woke-or-joke-api.herokuapp.com/api/v1/ratings', {
+    fetch('http://localhost:3001/api/v1/ratings', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -139,7 +139,7 @@ export const handleCreateRating = (userId, senatorId, wokeOrJoke) => {
 
 export const fetchUserSenators = (token) => {
   return dispatch => {
-    fetch('https://woke-or-joke-api.herokuapp.com/api/v1/user_rating', {
+    fetch('http://localhost:3001/api/v1/user_rating', {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${token}`
