@@ -43,10 +43,10 @@ class MainContainer extends Component {
 
 
 
-    let senators = this.props.senators.senators 
+    let senators = this.props.senators.senators
 
 
-    if(senators){
+    if(!!senators){
       return senators.map(senator => {
         return(
           <Card

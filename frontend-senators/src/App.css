@@ -136,7 +136,8 @@
   margin: 20px 20px 20px;
   text-align: center;
   background-color: #F62A00;
-  border-color: #F1F3CE
+  border-color: #F1F3CE;
+  height: 600px;
 }
 
 .senator-modal-dem {
@@ -147,13 +148,15 @@
   margin: 20px 20px 20px;
   text-align: center;
   background-color: #1E656D;
-  border-color: #F1F3CE
+  border-color: #F1F3CE;
+  height: 600px;
 }
 
 .modal-images {
   justify-content: center;
-  width: 80%;
-  padding-top: 40px;
+  width: inherit;
+  height: 400px;
+  padding-top: 5px;
 }
 
 .popup-content{
