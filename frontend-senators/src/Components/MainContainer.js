@@ -38,10 +38,15 @@ class MainContainer extends Component {
       display: 'inline-block'
 		};
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 668de5b911b4e6d38e32f23783038f095414da6c
     let senators = this.props.senators.senators
 
 
-    if(senators){
+    if(!!senators){
       return senators.map(senator => {
         return(
           <Card
