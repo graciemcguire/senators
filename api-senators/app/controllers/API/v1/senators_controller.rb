@@ -1,4 +1,5 @@
 class Api::V1::SenatorsController < ApplicationController
+
   def index
     @senators = Senator.all
     render json: @senators
@@ -8,4 +9,5 @@ class Api::V1::SenatorsController < ApplicationController
     @senator = Senator.find(params[:id])
     render json: @senator
   end
+  
 end

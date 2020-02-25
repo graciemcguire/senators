@@ -11,7 +11,7 @@ class SenatorContainer extends Component  {
   }
 
   filteredSenators = () => {
-    if(this.state.searchTerm === '' ) {
+    if(this.state.searchTerm === '') {
       return this.props.senators.senators.map(senator => (
         <SenatorThumbnail key={ senator.id } senator={ senator }/>))
     } else {
@@ -32,7 +32,6 @@ class SenatorContainer extends Component  {
   toggleSenators = () => {
     console.log('clicked:', this.state.clicked)
     this.setState({ clicked: !this.state.clicked })
-
   }
 
   render(){
@@ -45,13 +44,14 @@ class SenatorContainer extends Component  {
       <div className='title'>
         <center><h1>2019 US Senators</h1></center>
         <center>
-          <SearchForm  changeHandler={ this.changeHandler }/>
+          <SearchForm changeHandler={ this.changeHandler }/>
         </center>
       </div>
 
       <div className= 'senator-grid'>
         { senators.senators ?
-          this.filteredSenators() : console.log(senators) }
+          this.filteredSenators()
+          : console.log(senators) }
       </div>
       </Fragment>
     )

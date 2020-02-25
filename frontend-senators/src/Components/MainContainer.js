@@ -10,8 +10,6 @@ class MainContainer extends Component {
     message: 'S W I P E !'
   }
 
-
-
   onSwipeLeft = (senator) => {
     console.log(senator, "I was swiped left.")
     this.props.handleCreateRating(this.props.user.id, senator, 'joke')
@@ -28,7 +26,6 @@ class MainContainer extends Component {
 		});
   }
 
-
   renderPage = () => {
     console.log(this.props.senators.senators);
 
@@ -41,9 +38,7 @@ class MainContainer extends Component {
       display: 'inline-block'
 		};
 
-
-
-    let senators = this.props.senators.senators 
+    let senators = this.props.senators.senators
 
 
     if(senators){
@@ -87,7 +82,6 @@ class MainContainer extends Component {
       fontFamily: "Sans-Serif",
       color: "#F1F3CE"
     }
-
 
     return(
       <Fragment>

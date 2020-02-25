@@ -1,4 +1,5 @@
 class Api::V1::RatingsController < ApplicationController
+
   def create
     @rating = Rating.find_by(senator_id: params[:senator_id])
     if @rating
@@ -20,4 +21,5 @@ class Api::V1::RatingsController < ApplicationController
   def rating_params
     params.require(:rating).permit(:user_id, :senator_id, :user_rating)
   end
+
 end
