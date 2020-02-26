@@ -1,3 +1,12 @@
+html {
+  background-color: #00293C;
+}
+
+input {
+  color: #00293C;
+  background-color: #F1F3CE;
+}
+
 .App {
   text-align: center;
   background-color: #00293C;
@@ -195,9 +204,6 @@
   color: #F1F3CE;
 }
 
-.nav-links {
-
-}
 
 .nav {
   background-color: #00293C;
@@ -205,7 +211,7 @@
   align-items: center;
   height: 300px;
 
-  bottom-margin: 50%;
+  /* bottom-margin: 50%; */
   border-bottom: double;
   border-color: #F1F3CE
 }
@@ -281,6 +287,7 @@
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
+
 
 /* colors =
 navy - #00293C
