@@ -9,13 +9,15 @@ function Profile() {
   const [search, setSearch] = useState('');
   const [clicked, setClicked] = useState(false);
   const user = useSelector(state => state.user);
+
   const filteredSenators = () => {
+
     if (user.senators) {
       if (search === '') {
         return user.senators.map(senator => (
           <SenatorThumbnail key={senator.id} senator={senator} />
         ));
-      } else {
+      } else if (search !== '' || clicked){
         let filtered = user.senators.filter(senator =>
           senator.name.toLowerCase().includes(search.toLowerCase())
         );

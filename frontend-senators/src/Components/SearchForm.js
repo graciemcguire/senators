@@ -15,19 +15,3 @@ function SearchForm({ value, changeHandler }) {
 }
 
 export default SearchForm;
-
-// export default class SearchForm extends Component {
-//   render() {
-//     return (
-//       <form>
-//         <input
-//           className="form"
-//           type="text"
-//           value={this.props.value}
-//           onChange={this.props.changeHandler}
-//           placeholder={'Search all senators...'}
-//         />
-//       </form>
-//     );
-//   }
-// }

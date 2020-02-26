@@ -7,7 +7,7 @@ import SearchForm from './SearchForm';
 function SenatorContainer() {
   const [searchTerm, setSearchTerm] = useState('');
   const senators = useSelector(state => state.senators);
-  
+
   const filteredSenators = () => {
     if (searchTerm === '') {
       return senators.map(senator => (
@@ -36,7 +36,7 @@ function SenatorContainer() {
       </div>
 
       <div className="senator-grid">
-        {senators ? filteredSenators() : console.log('hello', senators)}
+        {senators ? filteredSenators() : console.log(senators)}
       </div>
     </>
   );

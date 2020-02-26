@@ -1,3 +1,5 @@
+User.destroy_all
+Senator.destroy_all
 
 gracie = User.create({email: 'gracie@gracie.com', username: 'gracie', password: 'test'})
 
