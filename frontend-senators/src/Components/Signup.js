@@ -1,60 +1,61 @@
-import React, { Component } from 'react';
-import { signUpAndFetch } from '../Redux/userActions'
-import { connect } from 'react-redux'
-import {  Link } from 'react-router-dom'
-import wokeorjoke_v1 from '../wokeorjoke_v1.svg'
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+import wokeorjoke_v1 from '../wokeorjoke_v1.svg';
+import userActions from '../Redux/userActions';
 
-class Signup extends Component {
+const initialState = {
+  username: '',
+  email: '',
+  password: ''
+};
 
-  submitHandler = (e) => {
-    e.preventDefault()
-    this.props.signUpAndFetch(e, this.props.history)
-  }
+function Signup() {
+  const dispatch = useDispatch();
+  const [form, setForm] = useState(initialState);
+  const submitHandler = e => {
+    e.preventDefault();
+    dispatch(userActions.signUpFetch(form));
+  };
 
-  render() {
-    return (
-      <div className='App-header'>
-        <img className='logo-small' src= { wokeorjoke_v1 } alt='logo'/>
-      <form onSubmit={ this.submitHandler }>
+  return (
+    <div className="App-header">
+      <img className="logo-small" src={wokeorjoke_v1} alt="logo" />
+      <form onSubmit={submitHandler}>
         <input
-          type='text'
-          name='username'
-          placeholder='username'
-          className='input'
+          type="text"
+          name="username"
+          placeholder="username"
+          className="input"
+          value={form.username}
+          onChange={e => setForm({ ...form, [e.target.name]: e.target.value })}
         />
         <input
-          type='text'
-          name='email'
-          placeholder='email'
-          className='input'
+          type="text"
+          name="email"
+          placeholder="email"
+          className="input"
+          value={form.email}
+          onChange={e => setForm({ ...form, [e.target.name]: e.target.value })}
         />
         <input
-          type='password'
-          name='password'
-          placeholder='password'
-          className='input'
+          type="password"
+          name="password"
+          placeholder="password"
+          className="input"
+          value={form.password}
+          onChange={e => setForm({ ...form, [e.target.name]: e.target.value })}
         />
         <center>
-        <Link className='button' to={'/login'}>Have an Account?</Link>
-        <button className='button' type='submit'>Sign Up!</button>
+          <Link className="button" to={'/login'}>
+            Have an Account?
+          </Link>
+          <button className="button" type="submit">
+            Sign Up!
+          </button>
         </center>
       </form>
     </div>
-    )
-  }
+  );
 }
-
-const mapStateToProps = (state) => {
-  return {
-    user: state.auth.user
-  }
-}
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    signUpAndFetch: (e, history) =>
-    dispatch(signUpAndFetch(e, history))
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Signup)
+export default Signup;

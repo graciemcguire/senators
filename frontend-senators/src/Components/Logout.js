@@ -1,36 +1,14 @@
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import userActions from '../Redux/userActions';
+function Logout({ history }) {
+  const dispatch = useDispatch();
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    dispatch(userActions.clearUserAction());
+    history.push('/');
+  };
 
-import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import { logoutUser } from '../Redux/userActions.js'
-import { withRouter } from "react-router-dom"
-
-class Logout extends Component {
-
-  handleLogout = () => {
-    localStorage.removeItem("token")
-    this.props.logoutUser()
-    this.props.history.push("/");
-  }
-
-  render() {
-    return(
-      <div>
-      { this.handleLogout() }
-      </div>
-    )
-  }
+  return <div>{handleLogout()}</div>;
 }
-
-const mapStateToProps = (state) => {
-  return {
-    user: state.auth.user
-  }
-}
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    logoutUser: () => dispatch(logoutUser())
-  }
-}
-
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Logout))
+export default Logout;

@@ -1,151 +1,66 @@
+import API from '../API';
 
-export const handleLogin = (user) => ({
-  type: 'HANDLE_LOGIN',
-  payload: { user }
-})
+const setUserAction = user => ({
+  type: 'SET_USER',
+  payload: user
+});
 
-export const logoutUser = () => ({
-  type: 'HANDLE_LOGOUT'
-})
+const clearUserAction = user => ({
+  type: 'CLEAR_USER'
+});
 
-export const getCurrentUser = (user) => ({
-  type: 'GET_CURRENT_USER',
-  payload: { user }
-})
-
-export const updateUserFromFetch = (user) => ({
-  type: 'UPDATE_USER_FROM_FETCH',
-  payload: { user }
-})
-
-export const stateSenators = senators => ({
-  type: 'SENATORS_ADDED_TO_STATE',
-  payload: { senators }
-})
-
-export const createRating = ratings => ({
-  type: 'CREATE_RATING',
-  payload: { ratings }
-})
-
-export const fetchRatings = ratings => ({
-  type: 'FETCH_RATINGS',
-  payload: { ratings }
-})
-
-export const loginFetch = (e) => {
-  return fetch("http://localhost:3001/api/v1/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json"
-    },
-    body: JSON.stringify({
-      user: {
-        email: e.target.email.value,
-        password: e.target.password.value
-      }
-    })
-  }).then(resp => resp.json())
-}
-
-export const loginAndFetch = (e, history) => {
-  return (dispatch) => {
-    return loginFetch(e)
-    .then(json => {
-      dispatch(handleLogin(json.user));
-      localStorage.setItem("token", json.jwt);
-      history.push('/main')
-    })
-  }
-}
-
-export const signUpAndFetch = (e, history) => {
-  return (dispatch) => {
-    return signUpFetch(e)
-    .then(json => {
-      dispatch(handleLogin(json.user)); localStorage.setItem("token", json.jwt)
-      history.push('/main')
-    })
-  }
-}
-
-export const signUpFetch = (e) => {
-  return fetch("http://localhost:3001/api/v1/users", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        user: {
-          username: e.target.username.value,
-          email: e.target.email.value,
-          password: e.target.password.value
-        }
-      })
-    }).then(resp => resp.json())
-}
-
-export const setAndFetchUser = (token) => {
-  return (dispatch) => {
-    return fetchingCurrentUser(token)
-    .then(json => dispatch(getCurrentUser(json)))
-  }
-}
-
-export const fetchingCurrentUser = (token) => {
-  return fetch('http://localhost:3001/api/v1/current_user', {
+export const loginFetch = user => dispatch => {
+  return fetch(API.LOGIN_URL, {
+    method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${token}`
-    }
+      Accept: 'application/json'
+    },
+    body: JSON.stringify(user)
   })
-  .then(resp => resp.json())
-  .catch(console.error)
-}
-
-export const fetchSenators = (token) => {
-  return dispatch => {
-    fetch('http://localhost:3001/api/v1/senators', {
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`
-      }
-    })
-      .then(r => r.json())
-      .then(senators => dispatch(stateSenators(senators)));
-  };
+    .then(resp => resp.json())
+    .then(data => {
+      localStorage.token = data.jwt;
+      dispatch(setUserAction(data.user));
+    });
 };
 
+export const signUpFetch = user => dispatch => {
+  return fetch(API.USERS_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(user)
+  })
+    .then(resp => resp.json())
+    .then(data => {
+      dispatch(setUserAction(data.user));
+      localStorage.setItem('token', data.jwt);
+    });
+};
 
-export const handleCreateRating = (userId, senatorId, wokeOrJoke) => {
-  return dispatch => {
-    fetch('http://localhost:3001/api/v1/ratings', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${localStorage.getItem('token')}`
-      },
-      body: JSON.stringify({
-        user_id: userId,
-        senator_id: senatorId,
-        user_rating: wokeOrJoke
-      })
+export const fetchingCurrentUser = () => dispatch => {
+  return fetch(API.PERSIST_URL, {
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${localStorage.token}`
+    }
+  })
+    .then(resp => resp.json())
+    .then(user => {
+      dispatch(setUserAction(user));
     })
-    .then(r => r.json())
-    .then(data => dispatch(createRating(data)))
-  }
-}
+    .catch(console.error);
+};
 
-export const fetchUserSenators = (token) => {
-  return dispatch => {
-    fetch('http://localhost:3001/api/v1/user_rating', {
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`
-      },
-    })
-    .then(r => r.json())
-    .then(userSenators => dispatch(fetchRatings(userSenators)))
-  }
-}
+///// BREAK POINT
+
+//// EXPORT
+
+export default {
+  loginFetch,
+  signUpFetch,
+  fetchingCurrentUser,
+  clearUserAction
+};

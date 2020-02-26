@@ -1,17 +1,33 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class SearchForm extends Component {
-  render (){
-    return (
-      <form>
-        <input
+function SearchForm({ value, changeHandler }) {
+  return (
+    <form>
+      <input
         className="form"
         type="text"
-        value={ this.props.value }
-        onChange={ this.props.changeHandler }
-        placeholder={ 'Search all senators...' }
-        />
-      </form>
-    )
-  }
+        value={value}
+        onChange={e => changeHandler(e.target.value)}
+        placeholder={'Search all senators...'}
+      />
+    </form>
+  );
 }
+
+export default SearchForm;
+
+// export default class SearchForm extends Component {
+//   render() {
+//     return (
+//       <form>
+//         <input
+//           className="form"
+//           type="text"
+//           value={this.props.value}
+//           onChange={this.props.changeHandler}
+//           placeholder={'Search all senators...'}
+//         />
+//       </form>
+//     );
+//   }
+// }
