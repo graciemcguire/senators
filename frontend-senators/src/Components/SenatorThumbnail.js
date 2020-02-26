@@ -2,19 +2,22 @@ import React from 'react';
 import Popup from 'reactjs-popup';
 
 function SenatorThumbnail({ senator }) {
+
   const renderPartyColor = () => {
     return senator.party === 'R'
       ? 'senator-thumbnail-gop'
       : 'senator-thumbnail-dem';
   };
+
   const renderModalPartyColor = () => {
     return senator.party === 'R' ? 'senator-modal-gop' : 'senator-modal-dem';
   };
 
   const renderUserSenators = () => {
     if (senator) {
+
       return (
-        <div className={renderPartyColor()} onClick>
+        <div className={renderPartyColor()}>
           <img
             className="thumbnail-images"
             src={senator.image}
@@ -32,8 +35,7 @@ function SenatorThumbnail({ senator }) {
   };
 
   const wokeOrJokeBtn = e => {
-    e.preventDefault();
-    console.log('milan 4ever');
+    console.log(e.target['value']);
     // this.props.handleCreateRating(user.id, senator.id, e.target.value)
   };
 

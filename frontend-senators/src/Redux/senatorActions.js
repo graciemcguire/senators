@@ -5,12 +5,6 @@ export const createRating = ratings => ({
   payload: { ratings }
 });
 
-// export const fetchRatings = ratings => ({
-//   type: 'FETCH_RATINGS',
-//   payload: { ratings }
-// });
-// //
-
 const setSenatorsAction = sens => ({
   type: 'SET_SENATORS',
   payload: sens

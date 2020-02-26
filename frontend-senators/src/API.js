@@ -4,6 +4,7 @@ const SENATORS_URL = BASE_URL + '/senators';
 const LOGIN_URL = BASE_URL + '/login';
 const PERSIST_URL = BASE_URL + '/current_user';
 const RATINGS_URL = BASE_URL + '/ratings';
+
 export default {
   BASE_URL,
   USERS_URL,
