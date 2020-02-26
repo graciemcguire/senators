@@ -6,8 +6,8 @@ import SearchForm from './SearchForm';
 
 function SenatorContainer() {
   const [searchTerm, setSearchTerm] = useState('');
-  const senators = useSelector(state => state.senator);
-  console.log(senators)
+  const senators = useSelector(state => state.senators);
+  
   const filteredSenators = () => {
     if (searchTerm === '') {
       return senators.map(senator => (
