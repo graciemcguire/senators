@@ -7,17 +7,31 @@ import senatorsActions from '../Redux/senatorActions';
 function MainContainer() {
   const dispatch = useDispatch();
   const senators = useSelector(state => state.senators);
+
   const [message, setMessage] = useState('S W I P E !');
+
   const onSwipeLeft = senator => {
-    console.log(senator, 'I was swiped left.');
     dispatch(senatorsActions.handleCreateRating(senator.id, 'joke'));
     setMessage('J O K E !');
   };
+
   const onSwipeRight = senator => {
-    console.log(senator, 'I was swiped right.');
     dispatch(senatorsActions.handleCreateRating(senator.id, 'woke'));
     setMessage('W O K E !');
   };
+
+
+  const shuffle = senators => {
+    let i = 0
+    let j = 0
+    let temp = null
+    for (i = senators.length - 1; i > 0; i -= 1) {
+      let j = Math.floor(Math.random() * (i + 1))
+      temp = senators[i]
+      senators[i] = senators[j]
+      senators[j] = temp
+    }
+  }
 
   const renderPage = () => {
     let titleStyle = {
@@ -28,8 +42,25 @@ function MainContainer() {
       color: '#00293C',
       display: 'inline-block'
     };
+
     if (senators.length) {
-      return senators.map(senator => {
+
+      function shuffle(senators) {
+        let currentIndex = senators.length, temporaryValue, randomIndex;
+
+        while (0 !== currentIndex) {
+
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex -= 1;
+
+          temporaryValue = senators[currentIndex];
+          senators[currentIndex] = senators[randomIndex];
+          senators[randomIndex] = temporaryValue;
+        }
+        return senators;
+      }
+
+      return shuffle(senators).map(senator => {
         return (
           <Card
             style={{ backgroundColor: '#F1F3CE' }}
@@ -53,7 +84,6 @@ function MainContainer() {
         );
       });
     } else {
-      console.log('elseeeee');
       return (
         <center>
           <h1>L O A D I N G . . .</h1>
@@ -61,31 +91,13 @@ function MainContainer() {
       );
     }
   };
-  let wrapperStyle = {
-    backgroundColor: '#00293C',
-    height: '80vh'
-  };
-
-  let containerStyle = {
-    backgroundColor: '00293C',
-    height: 'calc(100vh - 16px)'
-  };
-
-  let messageStyle = {
-    color: 'white',
-    textAlign: 'center',
-    fontWeight: 'bold',
-    fontSize: '2vw',
-    fontFamily: 'Sans-Serif',
-    color: '#F1F3CE'
-  };
 
   return (
     <>
       <Nav />
-      <div style={containerStyle}>
-        <CardWrapper style={wrapperStyle}>{renderPage()}</CardWrapper>
-        <div style={messageStyle}>{message}</div>
+      <div className='swipe-container'>
+        <CardWrapper className='swipe-wrapper'>{ renderPage() }</CardWrapper>
+        <div className='swipe-message'>{ message }</div>
       </div>
     </>
   );
