@@ -1,9 +1,9 @@
-## Woke or Joke
+# Woke or Joke
 A tinder based swiping web application that allows users to rate and contact the sitting US Senators from 2019.
 
 Users may also create an account to log in and save their ratings to a personal database built with PostgreSQL and Ruby on Rails, to view a gallery of past ratings or rerate them at will.
 
-# The Stack
+## The Stack
 
 * [ReactJS](https://reactjs.org/) - Front-End Framework
 * [Redux](https://redux.js.org/) - State management 
@@ -12,15 +12,15 @@ Users may also create an account to log in and save their ratings to a personal 
 * PostgreSQL - Database
 * Custom CSS for styling as well as the swiping feature for rating.
 
-# Authors
+## Authors
 
 * **Gracie McGuire** - [GitHub](https://github.com/graciemcguire) - [LinkedIn](https://www.linkedin.com/in/graciemcguire/)
 
-# License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-# How to use?
+## How to use?
 To clone and use Woke or Joke on your own:
 
 - Clone this repo
