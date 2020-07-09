@@ -8,8 +8,7 @@ Users may also create an account to log in and save their ratings to a personal 
 * [ReactJS](https://reactjs.org/) - Front-End Framework
 * [Redux](https://redux.js.org/) - State management 
 * [Ruby on Rails](https://rubyonrails.org/) - Back-End API for RESTful persistence of user data
-* Ruby on Rails - Back-end framework
-* PostgreSQL - Database
+* [PostgreSQL](https://www.postgresql.org/) - Database
 * Custom CSS for styling as well as the swiping feature for rating.
 
 ## How to use?
