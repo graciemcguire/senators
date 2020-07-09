@@ -3,17 +3,25 @@ A tinder based swiping web application that allows users to rate and contact the
 
 Users may also create an account to log in and save their ratings to a personal database built with PostgreSQL and Ruby on Rails, to view a gallery of past ratings or rerate them at will.
 
-## The Stack
+# The Stack
 
-React - Front-end framework
-React Hooks - State management
-Redux - State management
-Ruby on Rails - Back-end framework
-PostgreSQL - Database
-Custom CSS for styling as well as the swiping feature for rating.
+* [ReactJS](https://reactjs.org/) - Front-End Framework
+* [Redux](https://redux.js.org/) - State management 
+* [Ruby on Rails](https://rubyonrails.org/) - Back-End API for RESTful persistence of user data
+* Ruby on Rails - Back-end framework
+* PostgreSQL - Database
+* Custom CSS for styling as well as the swiping feature for rating.
 
-## How to use?
-To use Woke or Joke on your own:
+# Authors
+
+* **Gracie McGuire** - [GitHub](https://github.com/graciemcguire) - [LinkedIn](https://www.linkedin.com/in/graciemcguire/)
+
+# License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+# How to use?
+To clone and use Woke or Joke on your own:
 
 - Clone this repo
 - CD into the API repository and run `bundle install`, `rails db:migrate`, `rails db:seed` to get everything set up
